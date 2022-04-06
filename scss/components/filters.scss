@@ -1,0 +1,10 @@
+// ----- FILTERS ----- //
+.filters{
+    @include flex;
+    .btn--filter{
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
+}
+// ----- /FILTERS ----- //
+// 

@@ -1,0 +1,194 @@
+// ----- COMPONENTS BOX ----- //
+.components-box{
+    .components-title{
+        background-color: #3A3D49;
+        color: $white;
+        font-size: 2.8125rem;
+        line-height: 3.4375rem;
+        font-family: $font-family-heading;
+        font-weight: 700;
+        padding: 1.8rem 2rem;
+    }
+    .color-box{
+        width: 19.3125rem;
+        height: 19.125rem;
+        margin: 0 0.8125rem 3.125rem;
+        color: $white;
+        padding: 1.575rem 1.8625rem 1.875rem 1.7625rem;
+        @include flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2{
+            font-weight: 700;
+        }
+        span{
+            font-size: 1.5625rem;
+            line-height: 1.875rem;
+        }
+    }
+    &--colors{
+        margin-bottom: 2.9rem;
+        .components-body {
+            padding: 12.6rem 7.4rem;
+        }
+    }
+    &--typography{
+        .border-top{
+            border-top: 1px solid #000000;
+            margin-top: -0.7rem;
+            padding-top: 0.6rem;
+            display: flex;
+            margin-bottom: 4rem;
+            span{
+                margin-right: 3rem;
+                &:last-child{
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+            }
+        }
+        .components-body {
+            padding: 7.5rem 5.3rem;
+        }
+        p {
+            font-size: 2.4375rem;
+            line-height: 3.1875rem;
+            margin-bottom: 3.2rem;
+        }
+        .font-heading {
+            font-weight: 700;
+            font-family: $font-family-heading;
+        }
+        .left-col{
+            flex: 0 0 55%;
+            max-width: 55%;
+            h3{
+                margin-bottom: 2rem;
+            }
+        }
+        .right-col{
+            flex: 0 0 34.8%;
+            max-width: 34.8%;
+            padding-right: 1.2rem;
+            padding-top: 1rem;
+        }
+        .nav-text {
+            font-size: 0.875rem;
+            line-height: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 2.2rem;
+            font-family: $font-family-heading;
+            font-weight: 700;
+        }
+        .button-text {
+            font-size: 1rem;
+            margin-bottom: 2.2rem;
+            font-family: $font-family-heading;
+            font-weight: 700;
+        }
+        .body-text{
+            margin-bottom: 2.2rem;
+        }
+    }
+    &--logos{
+        .components-body{
+            @include flex;
+            align-items: center;
+            padding: 4.2rem 7.5rem;
+        }
+        img{
+            margin-right: 4rem;
+        }
+    }
+    &--icons{
+        background-color: #F2F2F2;
+        .components-body{
+            padding: 4.5rem 4.1875rem;
+        }
+        .icon{
+            width: 7.75rem;
+            height: 7.75rem;
+            margin-right: 2.6875rem;
+            margin-bottom: 2.375rem;
+        }
+    }
+    &--images{
+        .components-body{
+            padding: 4.1875rem 3.3125rem;
+        }
+        img{
+            max-width: 15rem;
+            height: auto;
+            object-fit: contain;
+            margin-right: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .d-flex{
+            align-items: center;
+        }
+    }
+    &--ui-icons{
+        .components-body{
+            padding: 4.0625rem 2.5625rem;
+        }
+        img{
+            margin-right: 0.625rem;
+        }
+        .d-flex{
+            align-items: center;
+            margin-right: 2.3125rem;
+            margin-bottom: 2rem;
+        }
+        .band {
+            margin-bottom: 1rem;
+        }
+    }
+    &--buttons{
+        .components-body{
+            padding: 2.5rem 3.1875rem;
+        }
+        .dashed-box {
+            border: 1px dashed #7B61FF;
+            margin-right: 1.875rem;
+            padding: 1.25rem;
+            max-width: 9.9375rem;
+            &--full-width{
+                max-width: 23rem;
+            }
+        }
+        .btn{
+            margin-bottom: 1.25rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &--icon{
+                margin-bottom: 1rem;
+            }
+        }
+        .d-flex{
+            align-items: center;
+            margin-bottom: 1.875rem;
+        }
+    }
+    &--formfields{
+        background-color: #F2F2F2;
+        .components-body{
+            padding: 5.875rem 5.875rem;
+        }
+        .formfield{
+            max-width: 20.7rem;
+            margin-bottom: 1.875rem;
+        }
+    }
+    &--cards{
+        .components-body{
+            background-color: #F2F2F2;
+            padding: 5.4375rem 4.8125rem;
+        }
+        .card{
+            max-width: 46.1875rem;
+        }
+    }
+}
+// ----- /COMPONENTS BOX ----- //
+// 

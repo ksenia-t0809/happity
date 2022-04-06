@@ -1,0 +1,72 @@
+// ------ Colors ------ //
+$white: #fff;
+$black: #000;
+$purple: #64358C;
+$mauve: #8047B0;
+$pink: #F72585;
+$pink_tint: #FFEAF3;
+$gold: #FDC500;
+$yellow: #FFD500;
+$dark_grey: #363A3C;
+$grey: #AEACAC;
+// ------ Fonts Vars ------ //
+
+$font-family-heading: 'Nunito', sans-serif;
+$font-family-base: 'Asap', sans-serif;
+
+
+// ------ Media Vars ------ //
+
+$breakpoints: (
+  'xxl':  ( max-width:  1679px ),
+  'xl': ( max-width:  1439px ),
+  'lg':  ( max-width: 1199px ),
+  'md':  ( max-width: 1023px ),
+  'sm':  ( max-width: 991px ),
+  'xs':  ( max-width: 767px ),
+  'xxs':  ( max-width: 575px )
+) !default;
+
+
+// ------ Color Classes ------ //
+// Colors for Background
+.bg-purple{
+    background-color: $purple;
+}
+.bg-mauve{
+    background-color: $mauve;
+}
+.bg-pink{
+    background-color: $pink;
+}
+.bg-gold{
+    background-color: $gold;
+}
+.bg-yellow{
+  background-color: $yellow;
+}
+.bg-dark-grey{
+  background-color: $dark-grey;
+}
+
+// Colors for text
+.text-purple{
+  color: $purple;
+}
+.text-mauve{
+  color: $mauve;
+}
+.text-pink{
+  color: $pink;
+}
+.text-gold{
+  color: $gold;
+}
+.text-yellow{
+  color: $yellow;
+}
+.text-dark-grey{
+  color: $dark-grey;
+}
+
+

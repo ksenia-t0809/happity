@@ -1,0 +1,13 @@
+// ----- TAG ----- //
+.tag{
+    border: 1px solid rgb(151 151 151 / 50%);
+    @include respond-to(0.125rem);
+    font-family: $font-family-base;
+    font-weight: 400;
+    color: $dark-grey;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.25rem 0.84rem;
+}
+// ----- TAG ----- //
+// 
