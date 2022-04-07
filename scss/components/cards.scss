@@ -61,6 +61,225 @@
         margin-top: auto;
         margin-bottom: 0.2rem;
     }
+    &--category{
+        h3{
+            font-size: 1.5625rem;
+            font-weight: 500;
+            line-height: 2.1875rem;
+            color: $purple;
+            margin-top: -0.2rem;
+            margin-bottom: 0.6rem;
+        }
+        p{
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            max-width: 20rem;
+        }
+        .card-image {
+            max-height: 6.5rem;
+        }
+        .card-body-col:last-child {
+            flex: 0 0 26.8%;
+            max-width: 26.8%;
+        }
+    }
+    &--date{
+        @include flex;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        border-bottom: 1px solid rgb(157 157 156 / 25%);
+        align-items: flex-start;
+        padding-top: 0.15rem;
+        padding-bottom: 0.75rem;
+        box-shadow: none;
+        .card-title{
+            color: $purple;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+            font-family: $font-family-heading;
+            flex: 0 0 15rem;
+            max-width: 15rem;
+        }
+        .time{
+            font-family: $font-family-heading;
+            letter-spacing: 0.5px;
+            flex: 0 0 8.8rem;
+            max-width: 8.8rem;
+        }
+        .period{
+            font-size: 1rem;
+            line-height: 0.875rem;
+        }
+        .day{
+            font-weight: 600;
+            font-size: 0.9375rem;
+            flex: 0 0 3rem;
+            max-width: 3rem;
+        }
+    }
+    &--contact{
+        background-color: $pink_tint;
+        position: relative;
+        box-shadow: none;
+        padding: 0.8rem 1.9rem 1.2rem;
+        overflow: hidden;
+        &::after{
+            content: '';
+            background-image: url(../img/icon-speech-bubble-pink.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 8.125rem;
+            height: 8.3125rem;
+            position: absolute;
+            right: -1.5rem;
+            top: -1.9rem;
+            transform: rotate(-0.43deg);
+            opacity: 0.1;
+        }
+        .card-title{
+            font-weight: 500;
+            font-family: $font-family-heading;
+            margin-bottom: 0.3rem;
+        }
+        ul{
+            li{
+                margin-bottom: 0.2rem;
+            }
+            a{
+                @include flex;
+                align-items: center;
+                color: $dark-grey;
+                img{
+                    flex: 0 0 0.75rem;
+                    max-width: 0.75rem;
+                    margin-right: 1rem;
+                    object-fit: contain;
+                    max-height: 0.75rem;
+                }
+            }
+        }
+        .social {
+            margin-top: 0.8rem;
+            @include flex;
+            a{
+                width: 1.75rem;
+                height: 1.75rem;
+                display: block;
+                margin-right: 0.6rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .btn--enquiry{
+            width: auto;
+            position: absolute;
+            bottom: 1.1rem;
+            right: 1.1rem;
+            padding: 0.3rem 0.8625rem;
+            margin-bottom: 0;
+        }
+    }
+    &--list{
+        background-color: $white;
+        padding: 1.1rem 1rem 1.5rem;
+        li{
+            border-bottom: 1px solid rgb(0 0 0 / 25%);
+            padding: 0.5rem 0;
+            a{
+                color: $purple;
+                font-size: 1rem;
+                line-height: 1.375rem;
+                font-family: $font-family-heading;
+                font-weight: 500;
+                @include flex;
+                align-items: center;
+                padding-right: 2rem;
+                position: relative;
+                color: $purple;
+                &::after{
+                    content: '';
+                    background-image: url(../img/icon-arrow-pink.svg);
+                    background-repeat: no-repeat;
+                    margin-left: auto;
+                    width: 0.4rem;
+                    height: 0.6rem;
+                    background-size: contain;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0.8rem;
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+    &--image{
+        background-color: transparent;
+        box-shadow: none;
+        .image-wrap{
+            width: 100%;
+            overflow: hidden;
+            height: 13rem;
+            background-color: #E3E0E0;
+            margin-bottom: 0.9rem;
+            display: block;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        h4{
+            color: $purple;
+            margin-bottom: 0.6rem;
+        }
+        .btn{
+            margin-top: 0.9rem;
+        }
+    }
+    &--news{
+        box-shadow: none;
+        background-color: transparent;
+        @include flex;
+        > div{
+            flex: 1;
+        }
+        .image-wrap{
+            width: 7rem;
+            flex: 0 0 7rem;
+            height: 7.5rem;
+            background-color: #E3E0E0;
+            margin-right: 1rem;
+        }
+        .card-label {
+            margin-top: -0.4rem;
+            margin-bottom: 0.1rem;
+        }
+        h4{
+            color: $purple;
+            margin-bottom: 0.4rem;
+        }
+        p{
+            max-width: 10rem;
+            margin-bottom: 0;
+        }
+    }
+    &--news-sm{
+        .image-wrap{
+            width: 4.3125rem;
+            flex: 0 0 4.3125rem;
+            height: 4.5rem;
+            margin-right: 0.7rem;
+        }
+        .card-label{
+            margin-top: -0.5rem;
+            margin-bottom: 0.3rem;
+        }
+    }
 }
 // ----- /CARDS ----- //
 // 
