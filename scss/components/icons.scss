@@ -3,6 +3,7 @@
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
+    object-fit: contain;
     &--cloud-gold{
         background-image: url(../img/icon-cloud-gold.png);
     }

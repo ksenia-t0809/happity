@@ -187,6 +187,9 @@
         }
         .card{
             max-width: 46.1875rem;
+            &--category-image{
+                max-width: 100%;
+            }
         }
         .card-contact-wrap {
             max-width: 21.875rem;
@@ -194,7 +197,90 @@
         .card-image-wrap {
             max-width: 20.5rem;
             margin-right: 3rem;
-        }         
+        }       
+        .card-category-wrap{
+            max-width: 16.8125rem;
+            flex: 1;
+        }
+        .card-search-wrap {
+            max-width: 21.3rem;
+        }
+        .d-flex{
+            > div{
+                flex: 1;
+            }
+        }  
+    }
+    &--banners{
+        .components-body{
+            padding: 12.125rem 8.875rem;
+            background-color: #F2F2F2;
+        }
+        .banner--activities-list {
+            margin-bottom: 3rem;
+        }
+        .banner-list-wrap{
+            flex: 1;
+            max-width: 20.5rem;
+            margin-right: 3rem;
+        }
+    }
+    &--navigation{
+        .components-body{
+            padding: 5rem;
+        }
+        .header{
+            margin-bottom: 6rem;
+            max-width: 1440px;
+        }
+        .footer{
+            max-width: 1440px;
+        }
+    }
+    &--hero-banners{
+        .block-hero{
+            max-width: 1440px;
+            margin-bottom: 5rem;
+        }
+        .components-body{
+            padding: 5rem;
+        }
+    }
+    &--featured{
+        .components-body{
+            background-color: #F2F2F2;
+            padding: 5rem;
+        }
+        .banner{
+            margin-right: 3rem;
+        }
+    }
+    &--blog{
+        .components-body{
+            padding: 5rem;
+            .block-blog{
+                max-width: 1440px;
+            }
+        }
+    }
+    &--block-logos{
+        .components-body{
+            padding: 5rem;
+            .block-logos{
+                max-width: 1440px;
+                width: 100%;
+            }
+        }
+    }
+    &--block-text{
+        .components-body{
+            padding: 5rem;
+            .block-text{
+                max-width: 1440px;
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+        }
     }
 }
 // ----- /COMPONENTS BOX ----- //

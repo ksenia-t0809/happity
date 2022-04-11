@@ -1,0 +1,18 @@
+// ----- BLOCK BLOG ----- //
+.block-blog{
+    background-color: $pink_tint;
+    padding-top: 2.9rem;
+    padding-bottom: 3.5rem;
+    .container{
+        @media(min-width: 1200px){
+            max-width: 76.3875rem;
+        }
+    }
+    .btn{
+        margin-top: 1.6rem;
+        padding: 0.55rem 1.5rem;
+        letter-spacing: 0.5px;
+    }
+}
+// ----- /BLOCK BLOG ----- //
+// 

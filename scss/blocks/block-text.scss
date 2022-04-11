@@ -1,0 +1,117 @@
+// ----- BLOCK TEXT ----- //
+.block-text{
+    background-color: $pink_tint;
+    padding-top: 4.1rem;
+    padding-bottom: 3.2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::before{
+        content: '';
+        background-image: url(../img/icon-curl-pink.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 37.5625rem;
+        height: 37.5625rem;
+        position: absolute;
+        top: -4.3rem;
+        right: -6.9rem;
+        opacity: 0.1;
+        z-index: -1;
+    }
+    .container{
+        @media(min-width: 1200px){
+            max-width: 76.3rem;
+        }
+    }
+    ul{
+        li{
+            font-size: 1.5625rem;
+            line-height: 2.1875rem;
+            font-family: $font-family-heading;
+            font-weight: 600;
+            padding-left: 2.4rem;
+            &::before{
+                content: '';
+                width: 0.4rem;
+                height: 0.4rem;
+                @include border-radius(50%);
+                background-color: $dark_grey;
+                display: inline-block;
+                vertical-align: 0.35rem;
+                margin-left: -1.5rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .col{
+        padding: 0 0.5625rem;
+    }
+    .row{
+        margin-left: -0.5625rem;
+        margin-right: -0.5625rem;
+    }
+    p{
+        font-size: 1.5625rem;
+        line-height: 2.1875rem;
+        font-family: $font-family-heading;
+        font-weight: 500;
+        margin-bottom: 2.1rem;
+    }
+    &--links{
+        background-color: $mauve_tint;
+        padding-top: 4.8rem;
+        padding-bottom: 4.9rem;
+        &::before{
+            background-image: url(../img/icon-squiggle-mauve.png);
+            width: 29.375rem;
+            height: 29.375rem;
+            top: auto;
+            bottom: -5.9rem;
+            right: -14.6rem;
+        }
+        .row{
+            margin-right: 0.5rem;
+        }
+        ul{
+            @include flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            li{
+                padding-left: 0;
+                border-bottom: 1px solid rgb(0 0 0 / 25%);
+                &::before{
+                    display: none;
+                }
+            }
+            a{
+                color: $dark_grey;
+                @include flex;
+                padding: 0;
+                padding-right: 4rem;
+                position: relative;
+                min-height: 5.3rem;
+                position: relative;
+                align-items: center;
+                &::after{
+                    content: '';
+                    display: block;
+                    background-image: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L9.54745 9.54745C9.79739 9.79739 9.79739 10.2026 9.54745 10.4525L2 18' stroke='%23F72585' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 0.8rem;
+                    height: 1.5rem;
+                    margin: auto 0;
+                    margin-left: auto;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0.6rem;
+                }
+            }
+        }
+    }
+}
+// ----- /BLOCK TEXT ----- //
+// 

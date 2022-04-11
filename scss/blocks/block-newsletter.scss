@@ -1,0 +1,31 @@
+// ----- BLOCK NEWSLETTER ----- //
+.block-newsletter{
+    color: $white;
+    background-color: $mauve;
+    padding-top: 2.4rem;
+    padding-bottom: 1.5rem;
+    h3{
+        margin-bottom: 1.9rem;
+    }
+    .formfield{
+        background-color: transparent;
+        .formfield-input{
+            @include border-radius(0.125rem);
+            padding-left: 0.6rem;
+            &::placeholder{
+                color: $dark_grey;
+            }
+        }
+    }
+    form{
+        margin-bottom: 1.8rem;
+    }
+    p{
+        a{
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+}
+// ----- /BLOCK NEWSLETTER ----- //
+// 

@@ -1,0 +1,64 @@
+// ----- SIDEBAR ----- //
+.sidebar{
+    background-color: $white;
+    position: relative;
+    max-width: 22.375rem;
+    padding: 0.9rem 1.6rem 1.3rem;
+    .btn--icon{
+        margin-left: 0.4rem;
+    }
+    .sidebar-menu {
+        margin-top: 1.4rem;
+        .item-button {
+            font-weight: 500;
+            padding: 0.5625rem 0.775rem;
+            width: 100%;
+            @include flex;
+            position: relative;
+            cursor: pointer;
+            &::after{
+                content: '';
+                background-image: url("data:image/svg+xml,%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.97705 1L6.20332 4.77373C6.07836 4.89869 5.87574 4.89869 5.75078 4.77373L1.97705 1' stroke='%23F72585' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 0.7rem;
+                height: 0.4rem;
+                margin: auto 0 auto auto;
+                position: absolute;
+                right: 1.2rem;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        .item-content{
+            max-height: 0;
+            height: auto;
+            transition: 0.4s;
+            overflow: hidden;
+            padding: 0rem 0.85rem;
+            margin-top: -0.05rem;
+            .formfield--form-check{
+                margin-bottom: 0.68rem;
+            }
+        }
+        .sidebar-item{
+            border-bottom: 1px solid rgb(0 0 0 / 25%);
+            transition: 0.4s;
+            &.active{
+                padding-bottom: 0.7rem;
+                .item-content{
+                    transition: 0.4s;
+                    max-height: 1000px;
+                }
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+    .btn--yellow{
+        margin-top: 0.6rem;
+    }
+}
+// ----- /SIDEBAR ----- //
+// 

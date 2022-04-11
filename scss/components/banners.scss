@@ -1,0 +1,83 @@
+// ----- BANNERS ----- //
+.banner{
+    &--activities-list{
+        background: #fff;
+        padding: 0.9rem 0.1rem 2.2rem;
+        .banner-title{
+            color: $purple;
+            font-size: 0.9375rem;
+            line-height: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.1px;
+            margin-bottom: 2.1rem;
+            span{
+                text-decoration: underline;
+            }
+        }
+        p{
+            max-width: 12rem;
+        }
+        .distance {
+            @include flex;
+            align-items: center;
+            line-height: 1rem;
+            margin-bottom: 1.6rem;
+            img{
+                flex: 0 0 0.625rem;
+                max-width: 0.625rem;
+                margin-right: 0.7rem;
+            }
+        }
+        .card--date{
+            margin: 0 -0.1rem;
+        }
+        .run-by {
+            margin-top: 2.2rem;
+            font-family: $font-family-heading;
+            font-weight: 500;
+            text-transform: uppercase;
+            a{
+                text-decoration: underline;
+                color: $purple;
+            }
+        }
+    }
+    &--list-view{
+        .card--listing{
+            margin-bottom: 0.875rem;
+        }
+    }
+    &--list-view-image{
+        background-color: $white;
+        padding-bottom: 0.9rem;
+        .card--listing-image{
+            margin-bottom: 0.93rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &--featured{
+        max-width: 23.4375rem;
+        padding: 0.5rem 1.5rem;
+        background-color: $white;
+        .card{
+            margin-bottom: 1.2rem;
+        }
+        h5{
+            color: $purple;
+            margin-left: -0.6rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        .card--listing-two{
+            margin-bottom: 1.3rem;
+        }
+    }
+    &--featured-two{
+        background-color: rgb(128 71 176 / 6%);
+    }
+    
+}
+// ----- /BANNERS ----- //
+// 

@@ -1,0 +1,108 @@
+// ----- HEADER ----- //
+.header{
+    background-color: $white;
+    @include flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.5rem 7.85rem 1.1rem 3.25rem;
+    @include respond-to(xl){
+        padding: 1.5rem 3rem 1.1rem 2rem;
+    }
+    @include respond-to(md){
+        padding: 1rem 1.3rem 1.1rem 1.4rem;
+    }
+    .menu-btn{
+        display: none;
+        @include respond-to(md){
+            width: 1.5625rem;
+            height: 1.5625rem;
+            object-fit: contain;
+            display: block;
+            margin-left: 1rem;
+        }
+    }
+    .logo{
+        display: block;
+        max-width: 16rem;
+        margin-right: auto;
+        @include respond-to(lg){
+            max-width: 13rem;
+        }
+        @include respond-to(md){
+            max-width: 14.3rem;
+        }
+    }
+    .header-nav{
+        @include flex;
+        align-items: center;
+        @include respond-to(md){
+            transform: translateX(100%);
+            transition: 0.4s;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .btn{
+            padding: 0.575rem 1.1625rem;
+            margin-left: 2.9rem;
+            @include respond-to(lg){
+                margin-left: 1.5rem;
+            }
+        }
+    }
+    .menu{
+        @include flex;
+        margin-top: 0.2rem;
+        li{
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.375rem;
+            text-transform: uppercase;
+            font-family: $font-family-heading;
+            letter-spacing: -0.3px;
+            margin-left: 3.3rem;
+            position: relative;
+            @include respond-to(lg){
+                margin-left: 1.5rem;
+            }
+            &.active{
+                &::after{
+                    content: '';
+                    height: 0.125rem;
+                    position: absolute;
+                    bottom: -0.3rem;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: $pink;
+                    @include border-radius(1rem);
+                }
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+            a{
+                color: $dark_grey;
+            }
+        }
+    }
+    .profile-link{
+        width: 2.125rem;
+        height: 2.125rem;
+        margin-left: 1.3rem;
+        @include respond-to(md){
+            width: 1.5625rem;
+            height: 1.5625rem;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+// ----- /HEADER ----- //
+// 

@@ -1,0 +1,65 @@
+// ----- BLOCK IMAGE CONTENT ----- //
+.block-image-content{
+    padding-top: 4.6rem;
+    padding-bottom: 6rem;
+    @include respond-to(md){
+        padding-top: 2.15rem;
+    }
+    h2{
+        max-width: 34rem;
+        margin: 0 auto 5.4rem;
+        color: $purple;
+        text-align: center;
+    }
+    .container{
+        @media(min-width: 1200px){
+            max-width: 76.4875rem;
+        }
+    }
+    .row{
+        align-items: center;
+    }
+    .image-wrap{
+        position: relative;
+        width: 100%;
+        height: 22.8rem;
+        &::before{
+            content: '';
+            background-image: url(../img/icon-heart-white.png);
+            background-repeat: no-repeat;
+            width: 18.9375rem;
+            height: 19rem;
+            background-size: contain;
+            position: absolute;
+            left: -4.4rem;
+            top: -0.4rem;
+            opacity: 0.45;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    h3{
+        color: $purple;
+        margin-bottom: 0.7rem;
+    }
+    .col{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .content-col{
+        padding-left: 7.6rem;
+        @include respond-to(lg){
+            padding-left: 3.6rem;
+        }
+    }
+    .btn{
+        padding: 0.575rem 3.05rem;
+        margin-top: 1rem;
+        margin-bottom: 1.1rem;
+    }
+}
+// ----- /BLOCK IMAGE CONTENT ----- //
+// 
