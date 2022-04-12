@@ -4,11 +4,22 @@
     background-color: $mauve;
     padding-top: 2.4rem;
     padding-bottom: 1.5rem;
+    @include respond-to(md){
+        padding-top: 1.4rem;
+        padding-bottom: 1.2rem;
+    }
     h3{
         margin-bottom: 1.9rem;
+        @include respond-to(md){
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
     }
     .formfield{
         background-color: transparent;
+        @include respond-to(md){
+            margin-bottom: 0.55rem;
+        }
         .formfield-input{
             @include border-radius(0.125rem);
             padding-left: 0.6rem;
@@ -19,11 +30,31 @@
     }
     form{
         margin-bottom: 1.8rem;
+        @include respond-to(md){
+            margin-bottom: 0.6rem;
+        }
+        .btn{
+            letter-spacing: 0.5px;
+        }
+        .col{
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            @include respond-to(md){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
     }
     p{
+        @include respond-to(md){
+            margin-bottom: 0;
+        }
         a{
             color: $white;
             text-decoration: underline;
+            &:hover{
+                color: $yellow;
+            }
         }
     }
 }

@@ -120,6 +120,9 @@
                 transform: rotate(-1.14deg);
                 object-fit: cover;
                 opacity: 0.2;
+                @include respond-to(md){
+                    display: none;
+                }
             }
             &--two{
                 width: 39.25rem;

@@ -3,20 +3,83 @@
     background-color: rgb(128 71 176 / 10%);
     padding-top: 4.1rem;
     padding-bottom: 6.7rem;
+    @include respond-to(md){
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    @include respond-to(xs){
+        padding-top: 1.1rem;
+        padding-bottom: 2.6rem;
+    }
     h3{
         text-align: center;
         margin-bottom: 4.35rem;
+        text-transform: uppercase;
+        @include respond-to(xs){
+            font-size: 1rem;
+            line-height: 1.375rem;
+            text-transform: none;
+            margin-bottom: 1.9rem;
+        }
     }
     .owl-carousel{
         @include flex;
         justify-content: space-between;
+        @include respond-to(xs){
+            width: auto;
+            margin: 0 -1.5rem;
+        }
         .item{
             flex: 0 0 30%;
             max-width: 30%;
             text-align: center;
+            @include respond-to(xs){
+                flex: 0 0 100%;
+                max-width: 100%;
+                height: 100%;
+            }
             a{
                 height: 100%;
                 @include flex-center-center;
+                @include respond-to(xs){
+                    max-height: 5.25rem;
+                    max-width: 9.125rem;
+                }
+            }
+            img{
+                object-fit: contain;
+                @include respond-to(md){
+                    width: 100%;
+                    height: 100%;
+                }
+                @include respond-to(xs){
+                    max-height: 5.25rem;
+                }
+            }
+            .logo-one{
+                @include respond-to(md){
+                    max-width: 5.375rem;
+                    max-height: 5.25rem;
+                }
+            }
+            .logo-two{
+                @include respond-to(md){
+                    max-width: 9.125rem;
+                    max-height: 3.75rem;
+                }
+            }
+            .logo-three{
+                @include respond-to(md){
+                    max-width: 7rem;
+                    max-height: 3.375rem;
+                }
+            }
+        }
+        .owl-stage{
+            @include respond-to(xs){
+                @include flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

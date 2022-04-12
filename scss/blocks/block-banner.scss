@@ -7,6 +7,10 @@
         background-color: $pink_tint;
         padding-top: 4.6rem;
         padding-bottom: 6.8rem;
+        @include respond-to(md){
+            padding-top: 1.45rem;
+            padding-bottom: 1.3rem;
+        }
         &::after{
             content: '';
             background-image: url(../img/icon-curl-pink.png);
@@ -19,6 +23,13 @@
             right: -3.9rem;
             opacity: 0.1;
             z-index: -1;
+            @include respond-to(md){
+                width: 20.3125rem;
+                height: 20.3125rem;
+                top: auto;
+                bottom: -0.7rem;
+                right: -3.6rem;
+            }
         }
         .container{
             @media(min-width: 1200px){
@@ -28,6 +39,10 @@
         .col{
             flex: 0 0 50%;
             max-width: 50%;
+            @include respond-to(md){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
             &:last-child{
                 padding-left: 1.4rem;
                 padding-top: 0.3rem;
@@ -37,14 +52,49 @@
     h2{
         color: $purple;
         margin-bottom: 1.4rem;
+        @include respond-to(md){
+            margin-bottom: 1rem;
+        }
+    }
+    h3{
+        @include respond-to(md){
+            font-size: 1rem;
+            line-height: 1.375rem;
+            padding-right: 3rem;
+            margin-bottom: 0.75rem;
+        }
     }
     .btn{
         padding: 0.9rem 2.9rem;
         height: 3.1875rem;
         letter-spacing: 0.5px;
+        @include respond-to(md){
+            margin-top: 2.3rem;
+            padding: 0.5rem 2.9rem;
+            height: 2.375rem;
+        }
     }
     p{
         margin-bottom: 1.8rem;
+        @include respond-to(md){
+            line-height: 1.375rem;
+            margin-bottom: 1.3rem;
+        }
+    }
+    .left-col{
+        .btn{
+            @include respond-to(md){
+                display: none;
+            }
+        }
+    }
+    .right-col{
+        .btn{
+            display: none;
+            @include respond-to(md){
+                display: block;
+            }
+        }
     }
 }
 // ----- /BLOCK BANNER ----- //

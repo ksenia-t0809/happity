@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+    // Mobile Menu
+    $('header .menu-btn').on('click', function(e){
+        $('.header').addClass('menu-open');
+        e.preventDefault();
+    });
+    $('header .btn-close').on('click', function(e){
+        $('.header').removeClass('menu-open');
+        e.preventDefault();
+    })
+
     // Sidebar
     $('.sidebar .item-button').on('click', function(){
         $(this).parent('.sidebar-item').toggleClass('active');
@@ -7,14 +18,15 @@ $(document).ready(function(){
     // Logos Mobile Slider
     if ( $(window).width() <= 767 ){
         $('.block-logos .owl-carousel').owlCarousel({
-            loop:false,
-            margin:10,
+            loop:true,
+            margin:50,
             nav:false,
             dots: false,
+            autoWidth:true,
             responsive:{
                 0:{
-                    items:1,
-                    center: true
+                    items:3,
+                    center: true,
                 }
             }
         })
@@ -23,16 +35,17 @@ $(document).ready(function(){
         stopCarousel();
     }
     $(window).resize(function() {
-        if ( $(window).width() <= 992 ) {
+        if ( $(window).width() <= 767 ) {
             $('.block-logos .owl-carousel').owlCarousel({
-                loop:false,
-                margin:10,
+                loop:true,
+                margin:50,
                 nav:false,
                 dots: false,
+                autoWidth:true,
                 responsive:{
                     0:{
-                        items:1,
-                        center: true
+                        items:3,
+                        center: true,
                     }
                 }
             });
