@@ -1,0 +1,76 @@
+// ----- BLOCK OUR STORY ----- //
+.block-our-story{
+    background-color: $purple;
+    color: $white;
+    padding-top: 3.2rem;
+    position: relative;
+    padding-bottom: 3.9rem;
+    z-index: 1;
+    @include respond-to(sm){
+        padding-top: 1.4rem;
+        padding-bottom: 1.9rem;
+    }
+    h2{
+        margin-bottom: 3.3rem;
+        @include respond-to(sm){
+            margin-bottom: 0.9rem;
+        }
+    }
+    video{
+        width: 33.25rem;
+        height: 19.6875rem;
+        margin: 0 auto;
+        display: block;
+        @include respond-to(md){
+            width: 27rem;
+            height: 15.9rem;
+            object-fit: cover;
+        }
+        @include respond-to(xs){
+            width: 16.025rem;
+            height: 9.1375rem;
+        }
+    }
+    .icons{
+        .icon{
+            position: absolute;
+            object-fit: contain;
+            z-index: -1;
+            &--one{
+                width: 21.6875rem;
+                height: 21.75rem;
+                left: -2.6rem;
+                top: 3.2rem;
+                @include respond-to(lg){
+                    width: 15rem;
+                    height: 15rem;
+                }
+                @include respond-to(sm){
+                    width: 6.25rem;
+                    height: 6.3125rem;
+                    top: 1rem;
+                    left: -1.3rem;
+                }
+            }
+            &--two{
+                width: 13.8125rem;
+                height: 13.875rem;
+                bottom: 2.5rem;
+                right: -8rem;
+                @include respond-to(lg){
+                    width: 11rem;
+                    height: 11rem;
+                    right: -3rem;
+                }
+                @include respond-to(sm){
+                    width: 5rem;
+                    height: 5.0625rem;
+                    right: -1.9rem;
+                    bottom: 0.9rem;
+                }
+            }
+        }
+    }
+}
+// ----- /BLOCK OUR STORY ----- //
+// 

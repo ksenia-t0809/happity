@@ -5,6 +5,12 @@
     padding-top: 6.85rem;
     height: 30.75rem;
     overflow: hidden;
+    @include respond-to(sm){
+        height: 15rem;
+    }
+    @include respond-to(xs){
+        height: 9.8rem;
+    }
     &--search{
         height: 38rem;
         @include respond-to(sm){
@@ -133,12 +139,33 @@
                 transform: matrix(-1, 0, 0, 1, 0, 0);
                 left: -5.6rem;
                 bottom: -17rem;
+                @include respond-to(lg){
+                    width: 30.25rem;
+                    height: 28.25rem;
+                    bottom: -10rem;
+                }
+                @include respond-to(sm){
+                    width: 12.5rem;
+                    height: 12.375rem;
+                    bottom: -3.8rem;
+                    left: -4.2rem;
+                }
             }
             &--three{
                 width: 29rem;
                 height: 28.75rem;
                 right: -4.8rem;
                 top: 0.3rem;
+                @include respond-to(lg){
+                    width: 24rem;
+                    height: 23.75rem;
+                }
+                @include respond-to(sm){
+                    width: 9.375rem;
+                    height: 9.3125rem;
+                    right: -1.3rem;
+                    top: -0.1rem;
+                }
             }
         }
     }

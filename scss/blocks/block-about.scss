@@ -1,0 +1,51 @@
+// ----- BLOCK ABOUT ----- //
+.block-about{
+    padding-top: 4.1rem;
+    padding-bottom: 5.6rem;
+    @include respond-to(sm){
+        padding-top: 1.8rem;
+        padding-bottom: 0rem;
+    }
+    h1{
+        color: $purple;
+        margin-bottom: 2.3rem;
+        @include respond-to(sm){
+            margin-bottom: 0.9rem;
+        }
+    }
+    .col{
+        flex: 0 0 71.5%;
+        max-width: 71.5%;
+        @include respond-to(sm){
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    h3{
+        padding-right: 3rem;
+        margin-bottom: 2.2rem;
+        @include respond-to(xl){
+            padding-right: 0;
+        }
+        @include respond-to(sm){
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-bottom: 1.4rem;
+        }
+        &:last-of-type{
+            margin-bottom: 1rem;
+            @include respond-to(sm){
+                margin-bottom: 1.3rem;
+            }
+        }
+    }
+    p{
+        margin-bottom: 1.4rem;
+        padding-right: 1rem;
+        @include respond-to(xl){
+            padding-right: 0;
+        }
+    }
+}
+// ----- /BLOCK ABOUT ----- //
+// 
