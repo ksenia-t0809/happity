@@ -2,7 +2,7 @@
 .block-categories{
     padding-top: 4.1rem;
     padding-bottom: 1.7rem;
-    @include respond-to(md){
+    @include respond-to(sm){
         padding-top: 1.5rem;
     }
     .container{
@@ -13,7 +13,7 @@
     h2{
         color: $purple;
         margin-bottom: 3.3rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-bottom: 1.1rem;
         }
     }
@@ -21,7 +21,7 @@
         flex: 0 0 25%;
         max-width: 25%;
         padding: 0 1.1875rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             flex: 0 0 50%;
             max-width: 50%;
             padding: 0 0.5rem;
@@ -30,7 +30,7 @@
     .row{
         margin-left: -1.1875rem;
         margin-right: -1.1875rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-left: -0.5rem;
             margin-right: -0.1rem;
         }

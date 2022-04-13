@@ -2,7 +2,7 @@
 .block-image-content{
     padding-top: 4.6rem;
     padding-bottom: 6rem;
-    @include respond-to(md){
+    @include respond-to(sm){
         padding-top: 2.15rem;
         padding-bottom: 2.2rem;
     }
@@ -11,7 +11,7 @@
         margin: 0 auto 5.4rem;
         color: $purple;
         text-align: center;
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-bottom: 2.3rem;
         }
     }
@@ -27,7 +27,7 @@
         position: relative;
         width: 100%;
         height: 22.8rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             height: 18rem;
             margin-bottom: 0.9rem;
         }
@@ -45,7 +45,7 @@
             left: -4.4rem;
             top: -0.4rem;
             opacity: 0.45;
-            @include respond-to(md){
+            @include respond-to(sm){
                 width: 10.8125rem;
                 height: 10.875rem;
                 left: -2.6rem;
@@ -61,14 +61,14 @@
     h3{
         color: $purple;
         margin-bottom: 0.7rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-bottom: 0.5rem;
         }
     }
     .col{
         flex: 0 0 50%;
         max-width: 50%;
-        @include respond-to(md){
+        @include respond-to(sm){
             flex: 0 0 100%;
             max-width: 100%;
         }
@@ -78,7 +78,7 @@
         @include respond-to(lg){
             padding-left: 3.6rem;
         }
-        @include respond-to(md){
+        @include respond-to(sm){
             padding-left: 1.5rem;
         }
     }
@@ -86,7 +86,7 @@
         padding: 0.575rem 3.05rem;
         margin-top: 1rem;
         margin-bottom: 1.1rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             width: 100%;
             margin-top: 1.3rem;
             margin-bottom: 0;
@@ -94,11 +94,11 @@
     }
 }
 .block-pnd-support{
-    @include respond-to(md){
+    @include respond-to(sm){
         padding-bottom: 2.9rem;
     }
     .image-wrap {
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-bottom: 0.5rem;
         }
         @include respond-to(xs){
@@ -106,18 +106,18 @@
         }
     }
     h3 {
-        @include respond-to(md){
+        @include respond-to(sm){
             text-transform: uppercase;
             margin-bottom: 0.6rem;
         }
     }
     .btn {
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-top: -0.1rem;
         }
     }
     p {
-        @include respond-to(md){
+        @include respond-to(sm){
             line-height: 1.375rem;
         }
     }

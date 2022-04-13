@@ -5,7 +5,7 @@
     .social{
         @include flex;
         margin-bottom: 3.6rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-bottom: 2.15rem;
         }
         a{
@@ -15,7 +15,7 @@
             @include flex-center-center;
             @include border-radius(50%);
             margin-right: 0.625rem;
-            @include respond-to(md){
+            @include respond-to(sm){
                 width: 2.1875rem;
                 height: 2.1875rem;
                 flex: 0 0 2.1875rem;
@@ -29,13 +29,13 @@
     }
     .footer-menu{
         margin-top: -0.2rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             margin-top: -0.7rem;
         }
         li{
             font-size: 1.25rem;
             line-height: 1.875rem;
-            @include respond-to(md){
+            @include respond-to(sm){
                 font-size: 1rem;
                 line-height: 1.375rem;
             }
@@ -54,12 +54,12 @@
     .footer-content {
         padding-top: 3.5rem;
         padding-bottom: 3.1rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             padding-top: 1.4rem;
             padding-bottom: 0.2rem;
         }
         .col{
-            @include respond-to(md){
+            @include respond-to(sm){
                 flex: 0 0 56%;
                 max-width: 56%;
                 padding-right: 1rem;
@@ -67,7 +67,7 @@
             &:first-child{
                 flex: 0 0 33.4%;
                 max-width: 33.4%;
-                @include respond-to(md){
+                @include respond-to(sm){
                     flex: 0 0 100%;
                     max-width: 100%;
                 }
@@ -75,7 +75,7 @@
             &:nth-child(2){
                 flex: 0 0 25%;
                 max-width: 25%;
-                @include respond-to(md){
+                @include respond-to(sm){
                     flex: 0 0 44%;
                     max-width: 44%;
                     padding-right: 0;
@@ -83,14 +83,14 @@
             }
         }
         h3{
-            @include respond-to(md){
+            @include respond-to(sm){
                 font-size: 1rem;
                 line-height: 1.375rem;
                 margin-bottom: 1rem;
             }
         }
         .row{
-            @include respond-to(md){
+            @include respond-to(sm){
                 margin: 0 -1.4rem;
             }
         }
@@ -99,13 +99,13 @@
         width: 9.0625rem;
         height: 3.4375rem;
         object-fit: contain;
-        @include respond-to(md){
+        @include respond-to(sm){
             display: none;
         }
     }
     .copy{
         margin-top: 1.6rem;
-        @include respond-to(md){
+        @include respond-to(sm){
             font-size: 1rem;
             line-height: 1.375rem;
             margin-top: 1.2rem;
@@ -113,7 +113,7 @@
     }
     .footer-badge-mob{
         display: none;
-        @include respond-to(md){
+        @include respond-to(sm){
             display: block;
             margin-top: 2.3rem;
             width: 5.9375rem;
