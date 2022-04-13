@@ -56,6 +56,10 @@
                 max-width: 1rem;
             }
         }
+        input{
+            font-weight: 500;
+            font-family: $font-family-heading;
+        }
     }
     &--select {
         width: 100%;
@@ -86,6 +90,7 @@
         @include flex;
         align-items: flex-start;
         cursor: pointer;
+        font-family: $font-family-base;
         .form-check-input{
             border: 1px solid $dark_grey;
             @include border-radius(0);

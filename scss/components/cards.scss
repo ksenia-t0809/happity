@@ -2,7 +2,7 @@
 .card{
     background-color: $white;
     box-shadow: 1px 1px 16px 5px rgba(0, 0, 0, 0.05);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
     display: block;
     .card-body{
         @include flex;
@@ -29,6 +29,7 @@
         font-weight: 500;
         font-family: $font-family-heading;
         line-height: 1rem;
+        margin-bottom: -0.1rem;
     }
     h5{
         color: $purple;
@@ -57,7 +58,7 @@
         }
     }
     .btn--enquiry{
-        padding: 0.3rem 0.2625rem;
+        padding: 0.35rem 0.2625rem;
         width: 100%;
         margin-top: auto;
         margin-bottom: 0.2rem;
