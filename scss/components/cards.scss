@@ -423,27 +423,41 @@
     }
     &--listing-image{
         @include flex;
-        padding: 0.9rem 1rem 0.8rem;
+        padding: 0.9rem 1rem 1.2rem;
         border-bottom: 1px solid rgb(157 157 156 / 25%);
         > div {
             flex: 1;
         }
         .card-image{
-            flex: 0 0 5rem;
-            max-width: 5rem;
+            flex: 0 0 5.375rem;
+            max-width: 5.375rem;
             @include flex;
             justify-content: center;
-            height: 3.0625rem;
-            margin-right: 1rem;
+            height: 3.8125rem;
+            margin-right: 1.1rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
         .card-title{
-            margin-bottom: -0.1rem;
+            margin-bottom: 0rem;
+            margin-top: 0.3rem;
+            line-height: 1.475rem;
+            font-size: 1.125rem;
         }
         h5 {
-            margin-bottom: 0.1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.475rem;
+            font-size: 1.125rem;
         }
         .distance {
-            margin-top: 0.2rem;
+            margin-top: 0.3rem;
+            font-size: 1rem;
+        }
+        p{
+            margin-bottom: 0rem;
         }
     }
     &--listing-featured{
@@ -572,6 +586,84 @@
             @include respond-to(sm){
                 margin-top: 0.3rem;
             }
+        }
+    }
+    &--expanded{
+        background-color: transparent;
+        box-shadow: none;
+        @include border-radius(0);
+        margin-bottom: 2.2rem;
+        .card-head{
+            border-bottom: 1px solid rgb(54 58 60 / 25%);
+            padding-bottom: 0.4rem;
+        }
+        .card-image{
+            max-height: 20.25rem;
+        }
+        .card-title{
+            margin-top: 1.75rem;
+            @include flex;
+            h3{
+                margin-bottom: 0.1rem;
+                color: $purple;
+            }
+            .underline{
+                color: $dark-grey;
+                text-decoration: underline;
+                margin-bottom: 1rem;
+            }
+            > div{
+                flex: 1;
+            }
+            > img{
+                width: 9.8125rem;
+                margin-left: auto;
+                height: 7.375rem;
+                object-fit: contain;
+                margin-top: -1.5rem;
+            }
+        }
+        .card-body{
+            padding: 0.2rem 0.1rem;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .card-info{
+            width: 100%;
+            margin-bottom: 1.7rem;
+            li{
+                font-size: 1rem;
+                line-height: 1.375rem;
+                margin-bottom: 0.35rem;
+                img{
+                    max-width: 0.6875rem;
+                    max-height: 0.6875rem;
+                    flex: 0 0 0.6875rem;
+                    margin-right: 1.2rem;
+                }
+                b{
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    text-transform: uppercase;
+                    margin-right: 0.1rem;
+                }
+                span{
+                    font-family: $font-family-heading;
+                    font-size: 0.875rem;
+                    line-height: 1.6rem;
+                    margin-bottom: -0.3rem;
+                    display: inline-block;
+                    letter-spacing: 0.5px;
+                    margin-right: 1.3rem;
+                }
+            }
+        }
+        .text-italic {
+            font-weight: 500;
+            font-style: italic;
+            font-size: 0.8125rem;
+            line-height: 1.375rem;
+            margin-bottom: 1.4rem;
         }
     }
 }

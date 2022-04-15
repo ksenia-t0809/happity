@@ -1,0 +1,29 @@
+// ----- BLOCK SCHEDULES ----- //
+.block-schedules{
+    padding-bottom: 2.3rem;
+    .row{
+        justify-content: space-between;
+    }
+    .col{
+        &--left{
+            flex: 0 0 58.4%;
+            max-width: 58.4%;
+        }
+        &--right{
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+    }
+    .banner--other-classes {
+        margin-bottom: 2.1rem;
+    }
+    .banner--quick-check {
+        margin-bottom: 2.1rem;
+    }
+    .banner--book-with{
+        margin-top: 2.3rem;
+        margin-bottom: 2.4rem;
+    }
+}
+// ----- /BLOCK SCHEDULES ----- //
+// 

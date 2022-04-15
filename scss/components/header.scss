@@ -125,9 +125,6 @@
                     width: 100%;
                     background-color: $pink;
                     @include border-radius(1rem);
-                    @include respond-to(md){
-                        display: none;
-                    }
                 }
             }
             &:hover{

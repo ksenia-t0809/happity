@@ -75,6 +75,10 @@
         height: 1.375rem;
         background: $pink_tint;
         @include border-radius(0);
+        @include flex-center-center;
+        img{
+            max-width: 0.4rem;
+        }
     }
     &--filter{
         background: $pink_tint;
@@ -115,6 +119,18 @@
             height: 1.2rem;
             letter-spacing: 0;
         }
+    }
+    &--filter-category{
+        background-color: $pink_tint;
+        color: $dark-grey;
+        font-size: 1rem;
+        font-family: $font-family-base;
+        @include border-radius(1.25rem);
+        font-weight: 400;
+        text-transform: none;
+        height: auto;
+        padding: 0.188rem 0.8rem;
+        line-height: 1.5;
     }
 }
 // ----- /BUTTONS ----- //
