@@ -15,6 +15,35 @@ $(document).ready(function(){
         $(this).parent('.sidebar-item').toggleClass('active');
     })
 
+    $('.btn-sidebar').on('click', function(e){
+        $('.sidebar').addClass('sidebar-open');
+        $('body').addClass('overflow');
+        e.preventDefault();
+    })
+
+    $('.sidebar .btn-close').on('click', function(e){
+        $('.sidebar').removeClass('sidebar-open');
+        $('body').removeClass('overflow');
+        e.preventDefault();
+    })
+
+    
+    
+    if ( $(window).width() >= 992 ){
+        var stickyOffset = $('.sidebar').offset().top;
+        var blockPost = $('.block-postcode-search');
+        $(window).scroll(function(){
+            var sticky = $('.sidebar'),
+            scroll = $(window).scrollTop();
+    
+            if (scroll >= stickyOffset) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+            
+            if (scroll >= blockPost.height() - 620) sticky.addClass('scroll-end');
+            else sticky.removeClass('scroll-end');
+        });
+    };
+
     // Logos Mobile Slider
     if ( $(window).width() <= 767 ){
         $('.block-logos .owl-carousel').owlCarousel({

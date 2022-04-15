@@ -4,9 +4,15 @@
     box-shadow: 1px 1px 16px 5px rgba(0, 0, 0, 0.05);
     margin-bottom: 1.75rem;
     display: block;
+    @include respond-to(sm){
+        margin-bottom: 1.25rem;
+    }
     .card-body{
         @include flex;
         padding: 1.4rem 1.7rem 1.4rem 1.5rem;
+        @include respond-to(sm){
+            padding: 0.7rem 0.9rem 1.1rem 0.9rem;
+        }
     }
     .card-body-col{
         flex: 1;
@@ -23,6 +29,11 @@
         max-height: 6rem;
         object-fit: cover;
         margin-top: 0.1rem;
+        @include respond-to(sm){
+            width: 4.3125rem;
+            height: 4.5rem;
+            margin-left: auto;
+        }
     }
     .time {
         font-size: 0.875rem;
@@ -34,6 +45,9 @@
     h5{
         color: $purple;
         margin-bottom: 0.6rem;
+        @include respond-to(sm){
+            margin-bottom: 0rem;
+        }
     }
     .card-text{
         font-size: 0.875rem;
@@ -43,6 +57,9 @@
     }
     .card-info {
         margin-top: 0.6rem;
+        @include respond-to(sm){
+            margin-top: 0.55rem;
+        }
         li{
             @include flex;
             align-items: flex-start;
@@ -54,6 +71,9 @@
                 max-height: 0.625rem;
                 margin-right: 0.7rem;
                 margin-top: 0.4rem;
+                @include respond-to(sm){
+                    margin-right: 0.5rem;
+                }
             }
         }
     }
@@ -62,6 +82,22 @@
         width: 100%;
         margin-top: auto;
         margin-bottom: 0.2rem;
+    }
+    .btn-mob{
+        display: none;
+        @include respond-to(lg){
+            display: inline-block;
+            padding: 0.4rem 0.6625rem;
+            margin-left: -0.8rem;
+            width: auto;
+            margin-bottom: 0.1rem;
+            height: 2rem;
+        }
+    }
+    .btn-desk{
+        @include respond-to(lg){
+            display: none;
+        }
     }
     &--category{
         h3{

@@ -55,6 +55,7 @@
         text-transform: uppercase;
         padding: 0;
         @include flex;
+        flex-wrap: nowrap;
         align-items: center;
         line-height: 0.8875rem;
         font-weight: 500;
@@ -84,8 +85,8 @@
         text-transform: none;
         background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1L5.22627 4.77373C5.10131 4.89869 4.89869 4.89869 4.77373 4.77373L1 1' stroke='%23F72585' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
-        background-position: 4.25rem 1.125rem;
-        padding: 0.5625rem 2.3125rem 0.5625rem 1.125rem;
+        background-position: 89% 50%;
+        padding: 0.5625rem 1.7125rem 0.5625rem 1.125rem;
     }
     &--small{
         padding: 0.4rem 0.75rem;

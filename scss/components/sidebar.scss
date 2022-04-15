@@ -1,15 +1,101 @@
 // ----- SIDEBAR ----- //
 .sidebar{
-    background-color: $white;
-    position: relative;
-    max-width: 22.375rem;
+    max-width: 21.9375rem;
     padding: 0.4rem 1.6rem 1.3rem;
-    .btn--icon{
+    position: relative;
+    transition: 0.4s;
+    width: 100%;
+    @include respond-to(lg){
+        padding: 0.4rem 1rem 1.3rem;
+        max-width: 16.9375rem;
+    }
+    @include respond-to(sm){
+        position: fixed;
+        inset: 0;
+        background-color: #fff;
+        max-width: 100%;
+        transform: translateX(100%);
+        padding: 1.2rem 1.5rem 1.3rem;
+        overflow-y: auto;
+    }
+    &.fixed{
+        position: fixed;
+        top: 1rem;
+        transition: 0.4s;
+    }
+    &.scroll-end {
+        position: relative;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    &.sidebar-open{
+        transform: translateX(0);
+    }
+    > .btn--icon{
         margin-left: 0.4rem;
+        @include respond-to(sm){
+            display: none;
+        }
+    }
+    .sidebar-head{
+        display: none;
+        @include respond-to(sm){
+            @include flex;
+            justify-content: space-between;
+            margin-bottom: 0.3rem;
+        }
+        h3{
+            @include respond-to(sm){
+                font-size: 1.5625rem;
+                line-height: 1.875rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .sidebar-formfield{
+        display: none;
+        @include respond-to(sm){
+            @include flex;
+            margin-bottom: 1.3rem;
+        }
+        .btn{
+            @include respond-to(sm){
+                margin-left: auto;
+                margin-right: -0.2rem;
+            }
+        }
+    }
+    .formfield{
+        @include respond-to(sm){
+            flex: 0 0 100%;
+            max-width: 100%;
+            background-color: $light_grey;
+        }
+        input{
+            @include respond-to(sm){
+                background-color: $light_grey;
+            }
+        }
+    }
+    .btn-close{
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: -0.2rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
     .sidebar-menu {
         margin-top: 1.4rem;
         font-family: $font-family-heading;
+        @include respond-to(sm){
+            margin: 0;
+        }
         .item-button {
             font-weight: 500;
             padding: 0.5625rem 0.775rem;
@@ -17,6 +103,9 @@
             @include flex;
             position: relative;
             cursor: pointer;
+            @include respond-to(sm){
+                padding-left: 0;
+            }
             &::after{
                 content: '';
                 background-image: url("data:image/svg+xml,%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.97705 1L6.20332 4.77373C6.07836 4.89869 5.87574 4.89869 5.75078 4.77373L1.97705 1' stroke='%23F72585' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
@@ -29,6 +118,9 @@
                 right: 0.9rem;
                 top: 0;
                 bottom: 0;
+                @include respond-to(sm){
+                    right: 0.7rem;
+                }
             }
         }
         .item-content{
@@ -38,6 +130,9 @@
             overflow: hidden;
             padding: 0rem 0.85rem;
             margin-top: -0.05rem;
+            @include respond-to(sm){
+                padding-left: 0.1rem;
+            }
             .formfield--form-check{
                 margin-bottom: 0.68rem;
             }
@@ -54,11 +149,21 @@
             }
             &:last-child{
                 border-bottom: 0;
+                @include respond-to(sm){
+                    border-bottom: 1px solid rgb(0 0 0 / 25%);
+                }
             }
         }
     }
     .btn--yellow{
         margin-top: 0.6rem;
+        @include respond-to(lg){
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @include respond-to(sm){
+            margin-top: 2.0625rem;
+        }
     }
 }
 // ----- /SIDEBAR ----- //

@@ -1,6 +1,7 @@
 // ----- FILTERS ----- //
 .filters{
     @include flex;
+    flex-wrap: nowrap;
     .btn--filter{
         margin-right: 0.5rem;
         margin-bottom: 0;

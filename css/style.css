@@ -329,6 +329,7 @@ h5 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   line-height: 0.8875rem;
   font-weight: 500;
@@ -364,8 +365,8 @@ h5 {
   text-transform: none;
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1L5.22627 4.77373C5.10131 4.89869 4.89869 4.89869 4.77373 4.77373L1 1' stroke='%23F72585' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  background-position: 4.25rem 1.125rem;
-  padding: 0.5625rem 2.3125rem 0.5625rem 1.125rem;
+  background-position: 89% 50%;
+  padding: 0.5625rem 1.7125rem 0.5625rem 1.125rem;
 }
 .btn--small {
   padding: 0.4rem 0.75rem;
@@ -552,6 +553,11 @@ h5 {
   line-height: 1rem;
   padding: 0 0.9375rem;
 }
+@media (max-width: 991px) {
+  .band {
+    padding: 0 0.625rem;
+  }
+}
 .band img {
   width: 0.6875rem;
   height: 0.6875rem;
@@ -584,6 +590,7 @@ h5 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .filters .btn--filter {
   margin-right: 0.5rem;
@@ -734,12 +741,22 @@ h5 {
   margin-bottom: 1.75rem;
   display: block;
 }
+@media (max-width: 991px) {
+  .card {
+    margin-bottom: 1.25rem;
+  }
+}
 .card .card-body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 1.4rem 1.7rem 1.4rem 1.5rem;
+}
+@media (max-width: 991px) {
+  .card .card-body {
+    padding: 0.7rem 0.9rem 1.1rem 0.9rem;
+  }
 }
 .card .card-body-col {
   flex: 1;
@@ -760,6 +777,13 @@ h5 {
   object-fit: cover;
   margin-top: 0.1rem;
 }
+@media (max-width: 991px) {
+  .card .card-image {
+    width: 4.3125rem;
+    height: 4.5rem;
+    margin-left: auto;
+  }
+}
 .card .time {
   font-size: 0.875rem;
   font-weight: 500;
@@ -771,6 +795,11 @@ h5 {
   color: #64358C;
   margin-bottom: 0.6rem;
 }
+@media (max-width: 991px) {
+  .card h5 {
+    margin-bottom: 0rem;
+  }
+}
 .card .card-text {
   font-size: 0.875rem;
   line-height: 1.375rem;
@@ -779,6 +808,11 @@ h5 {
 }
 .card .card-info {
   margin-top: 0.6rem;
+}
+@media (max-width: 991px) {
+  .card .card-info {
+    margin-top: 0.55rem;
+  }
 }
 .card .card-info li {
   display: -ms-flexbox;
@@ -796,11 +830,34 @@ h5 {
   margin-right: 0.7rem;
   margin-top: 0.4rem;
 }
+@media (max-width: 991px) {
+  .card .card-info li img {
+    margin-right: 0.5rem;
+  }
+}
 .card .btn--enquiry {
   padding: 0.35rem 0.2625rem;
   width: 100%;
   margin-top: auto;
   margin-bottom: 0.2rem;
+}
+.card .btn-mob {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .card .btn-mob {
+    display: inline-block;
+    padding: 0.4rem 0.6625rem;
+    margin-left: -0.8rem;
+    width: auto;
+    margin-bottom: 0.1rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 1199px) {
+  .card .btn-desk {
+    display: none;
+  }
 }
 .card--category h3 {
   font-size: 1.5625rem;
@@ -1327,17 +1384,121 @@ h5 {
 }
 
 .sidebar {
-  background-color: #fff;
-  position: relative;
-  max-width: 22.375rem;
+  max-width: 21.9375rem;
   padding: 0.4rem 1.6rem 1.3rem;
+  position: relative;
+  transition: 0.4s;
+  width: 100%;
 }
-.sidebar .btn--icon {
+@media (max-width: 1199px) {
+  .sidebar {
+    padding: 0.4rem 1rem 1.3rem;
+    max-width: 16.9375rem;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    max-width: 100%;
+    transform: translateX(100%);
+    padding: 1.2rem 1.5rem 1.3rem;
+    overflow-y: auto;
+  }
+}
+.sidebar.fixed {
+  position: fixed;
+  top: 1rem;
+  transition: 0.4s;
+}
+.sidebar.scroll-end {
+  position: relative;
+  opacity: 0;
+  transition: 0.4s;
+}
+.sidebar.sidebar-open {
+  transform: translateX(0);
+}
+.sidebar > .btn--icon {
   margin-left: 0.4rem;
+}
+@media (max-width: 991px) {
+  .sidebar > .btn--icon {
+    display: none;
+  }
+}
+.sidebar .sidebar-head {
+  display: none;
+}
+@media (max-width: 991px) {
+  .sidebar .sidebar-head {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar .sidebar-head h3 {
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+.sidebar .sidebar-formfield {
+  display: none;
+}
+@media (max-width: 991px) {
+  .sidebar .sidebar-formfield {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1.3rem;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar .sidebar-formfield .btn {
+    margin-left: auto;
+    margin-right: -0.2rem;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar .formfield {
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: #F2F2F2;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar .formfield input {
+    background-color: #F2F2F2;
+  }
+}
+.sidebar .btn-close {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: -0.2rem;
+}
+.sidebar .btn-close img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .sidebar .sidebar-menu {
   margin-top: 1.4rem;
   font-family: "Nunito", sans-serif;
+}
+@media (max-width: 991px) {
+  .sidebar .sidebar-menu {
+    margin: 0;
+  }
 }
 .sidebar .sidebar-menu .item-button {
   font-weight: 500;
@@ -1349,6 +1510,11 @@ h5 {
   flex-wrap: wrap;
   position: relative;
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  .sidebar .sidebar-menu .item-button {
+    padding-left: 0;
+  }
 }
 .sidebar .sidebar-menu .item-button::after {
   content: "";
@@ -1363,6 +1529,11 @@ h5 {
   top: 0;
   bottom: 0;
 }
+@media (max-width: 991px) {
+  .sidebar .sidebar-menu .item-button::after {
+    right: 0.7rem;
+  }
+}
 .sidebar .sidebar-menu .item-content {
   max-height: 0;
   height: auto;
@@ -1370,6 +1541,11 @@ h5 {
   overflow: hidden;
   padding: 0rem 0.85rem;
   margin-top: -0.05rem;
+}
+@media (max-width: 991px) {
+  .sidebar .sidebar-menu .item-content {
+    padding-left: 0.1rem;
+  }
 }
 .sidebar .sidebar-menu .item-content .formfield--form-check {
   margin-bottom: 0.68rem;
@@ -1388,8 +1564,24 @@ h5 {
 .sidebar .sidebar-menu .sidebar-item:last-child {
   border-bottom: 0;
 }
+@media (max-width: 991px) {
+  .sidebar .sidebar-menu .sidebar-item:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+}
 .sidebar .btn--yellow {
   margin-top: 0.6rem;
+}
+@media (max-width: 1199px) {
+  .sidebar .btn--yellow {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar .btn--yellow {
+    margin-top: 2.0625rem;
+  }
 }
 
 .banner--activities-list {
@@ -3306,12 +3498,24 @@ h5 {
 .block-postcode-search {
   padding-bottom: 9rem;
 }
+@media (max-width: 991px) {
+  .block-postcode-search {
+    padding-bottom: 0.3rem;
+  }
+}
 .block-postcode-search .block-head {
   background-color: #64358C;
   padding-top: 2.4rem;
   padding-bottom: 2rem;
   color: #fff;
   margin-bottom: 2.8rem;
+}
+@media (max-width: 991px) {
+  .block-postcode-search .block-head {
+    padding-top: 1.4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.05rem;
+  }
 }
 .block-postcode-search .block-head h5 {
   margin-bottom: 0;
@@ -3324,10 +3528,23 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .block-postcode-search .block-head .row {
+    margin: 0;
+  }
+}
 .block-postcode-search .block-head .formfield {
   width: 20.5rem;
   margin-right: 2.375rem;
   margin-left: -2.375rem;
+}
+@media (max-width: 991px) {
+  .block-postcode-search .block-head .formfield {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 0.6rem;
+  }
 }
 @media (min-width: 1200px) {
   .block-postcode-search .container {
@@ -3338,19 +3555,40 @@ h5 {
   flex: 0 0 32.1%;
   max-width: 32.1%;
 }
+@media (max-width: 991px) {
+  .block-postcode-search .col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .block-postcode-search .col:last-child {
   flex: 0 0 66%;
   max-width: 66%;
   padding-right: 2.6rem;
 }
+@media (max-width: 991px) {
+  .block-postcode-search .col:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 1.5rem;
+  }
+}
 .block-postcode-search .block-body .row {
   justify-content: space-between;
+  align-items: stretch;
 }
 .block-postcode-search .now-booking {
   padding-top: 3rem;
   padding-bottom: 1rem;
   position: relative;
   margin-bottom: 1.9rem;
+}
+@media (max-width: 991px) {
+  .block-postcode-search .now-booking {
+    margin-top: 2.5rem;
+    padding-top: 1.3rem;
+    padding-bottom: 0.5rem;
+  }
 }
 .block-postcode-search .now-booking::before {
   content: "";
@@ -3359,14 +3597,42 @@ h5 {
   position: absolute;
   inset: 0px;
   left: -43vw;
-  right: -17vw;
+  right: -30vw;
   z-index: -1;
 }
 .block-postcode-search h3 {
   margin-bottom: 0.9rem;
 }
+@media (max-width: 991px) {
+  .block-postcode-search h3 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-left: -0.6rem;
+  }
+}
 .block-postcode-search .card {
   background-color: #fff;
+}
+.block-postcode-search .filters-mob {
+  display: none;
+}
+@media (max-width: 991px) {
+  .block-postcode-search .filters-mob {
+    display: block;
+    margin-bottom: 1.4rem;
+  }
+}
+.block-postcode-search .filters-mob .btn--icon {
+  margin-right: 1rem;
+}
+.block-postcode-search .filters-mob .btn--icon img {
+  flex: 0 0 1rem;
+  max-width: 1rem;
+  margin-right: 0.4rem;
+  margin-top: -0.2rem;
+}
+.block-postcode-search .filters-mob .filters {
+  margin-top: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

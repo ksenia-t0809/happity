@@ -1,12 +1,20 @@
 // ----- BLOCK POSTCODE SEARCH ----- //
 .block-postcode-search{
     padding-bottom: 9rem;
+    @include respond-to(sm){
+        padding-bottom: 0.3rem;
+    }
     .block-head{
         background-color: $purple;
         padding-top: 2.4rem;
         padding-bottom: 2rem;
         color: $white;
         margin-bottom: 2.8rem;
+        @include respond-to(sm){
+            padding-top: 1.4rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1.05rem;
+        }
         h5{
             margin-bottom: 0;
             letter-spacing: 0.5px;
@@ -17,11 +25,20 @@
         .row{
             justify-content: center;
             align-items: center;
+            @include respond-to(sm){
+                margin: 0;
+            }
         }
         .formfield{
             width: 20.5rem;
             margin-right: 2.375rem;
             margin-left: -2.375rem;
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin: 0;
+                margin-bottom: 0.6rem;
+            }
         }
     }
     .container{
@@ -33,16 +50,26 @@
         &:first-child{
             flex: 0 0 32.1%;
             max-width: 32.1%;
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
         &:last-child{
             flex: 0 0 66%;
             max-width: 66%;
             padding-right: 2.6rem;
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding-right: 1.5rem;
+            }
         }
     }
     .block-body{
         .row{
             justify-content: space-between;
+            align-items: stretch;
         }
     }
     .now-booking {
@@ -50,6 +77,11 @@
         padding-bottom: 1rem;
         position: relative;
         margin-bottom: 1.9rem;
+        @include respond-to(sm){
+            margin-top: 2.5rem;
+            padding-top: 1.3rem;
+            padding-bottom: 0.5rem;
+        }
         &::before{
             content: "";
             background: $mauve;
@@ -57,15 +89,39 @@
             position: absolute;
             inset: 0px;
             left: -43vw;
-            right: -17vw;
+            right: -30vw;
             z-index: -1;
         }
     }
     h3{
         margin-bottom: 0.9rem;
+        @include respond-to(sm){
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-left: -0.6rem;
+        }
     }
     .card{
         background-color: $white;
+    }
+    .filters-mob{
+        display: none;
+        @include respond-to(sm){
+            display: block;
+            margin-bottom: 1.4rem;
+        }
+        .btn--icon{
+            margin-right: 1rem;
+            img{
+                flex: 0 0 1rem;
+                max-width: 1rem;
+                margin-right: 0.4rem;
+                margin-top: -0.2rem;
+            }
+        }
+        .filters{
+            margin-top: 0.6rem;
+        }
     }
 }
 // ----- /BLOCK POSTCODE SEARCH ----- //

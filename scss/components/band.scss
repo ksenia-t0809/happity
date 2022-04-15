@@ -10,6 +10,9 @@
     font-size: 0.875rem;
     line-height: 1rem;
     padding: 0 0.9375rem;
+    @include respond-to(sm){
+        padding: 0 0.625rem;
+    }
     img{
         width: 0.6875rem;
         height: 0.6875rem;
