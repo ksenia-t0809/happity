@@ -3,19 +3,35 @@
     .description-item{
         padding-left: 2.2rem;
         margin-bottom: 2rem;
+        @include respond-to(sm){
+            padding-left: 3.5rem;
+            padding-right: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
         p{
             margin-bottom: 1.4rem;
+            a{
+                color: $dark_grey;
+                text-decoration: underline;
+            }
         }
     }
     h3{
         color: $purple;
         margin-bottom: 0;
+        @include respond-to(sm){
+            font-size: 1rem;
+            line-height: 1.375rem;
+        }
     }
     .item-title{
         @include flex;
         align-items: flex-start;
         margin-bottom: 1rem;
         position: relative;
+        @include respond-to(sm){
+            margin-bottom: 1.3rem;
+        }
         .icon-wrap{
             flex: 0 0 1.25rem;
             max-width: 1.25rem;
@@ -24,6 +40,9 @@
             margin-left: -2rem;
             margin-top: 0.55rem;
             position: absolute;
+            @include respond-to(md){
+                margin-top: 0.25rem;
+            }
             img{
                 object-fit: contain;
             }
@@ -59,6 +78,9 @@
         .btn{
             margin-right: 0.5rem;
             margin-bottom: 0.55rem;
+            @include respond-to(sm){
+                margin-right: 0.2rem;
+            }
         }
     }
 }

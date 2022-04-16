@@ -2,6 +2,9 @@
 .address{
     width: 100%;
     margin-bottom: 1.6rem;
+    @include respond-to(sm){
+        margin-bottom: 0.3rem;
+    }
     h5{
         margin-bottom: 0rem;
     }

@@ -1,6 +1,9 @@
 // ----- BLOCK SCHEDULES ----- //
 .block-schedules{
     padding-bottom: 2.3rem;
+    @include respond-to(sm){
+        padding-bottom: 1.4rem;
+    }
     .row{
         justify-content: space-between;
     }
@@ -8,21 +11,76 @@
         &--left{
             flex: 0 0 58.4%;
             max-width: 58.4%;
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 0;
+            }
         }
         &--right{
             flex: 0 0 33.3%;
             max-width: 33.3%;
+            @include respond-to(lg){
+                max-width: 41%;
+                flex: 0 0 41%;
+            }
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 0 1.5rem;
+                @include flex;
+                flex-direction: column;
+            }
+            .description-item{
+                @include respond-to(sm){
+                    padding: 0.5rem 0.5rem 0;
+                    margin-bottom: 1.8rem;
+                }
+                .icon-wrap{
+                    @include respond-to(sm){
+                        display: none;
+                    }
+                }
+            }
         }
     }
     .banner--other-classes {
         margin-bottom: 2.1rem;
+        @include respond-to(sm){
+            margin-bottom: 0;
+        }
     }
     .banner--quick-check {
         margin-bottom: 2.1rem;
+        @include respond-to(sm){
+            margin-bottom: 1rem;
+        }
     }
     .banner--book-with{
         margin-top: 2.3rem;
         margin-bottom: 2.4rem;
+        @include respond-to(sm){
+            margin-top: 1.8rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+    .banner-list-wrap{
+        @include respond-to(sm){
+            order: 6;
+            margin-top: 0.3rem;
+        }
+    }
+    .map{
+        @include respond-to(sm){
+            text-align: center;
+
+            margin: 0 -0.5rem 1.5rem;
+        }
+    }
+    .banner--list-view-image{
+        @include respond-to(sm){
+            margin-bottom: 0;
+        }
     }
 }
 // ----- /BLOCK SCHEDULES ----- //

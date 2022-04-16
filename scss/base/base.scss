@@ -126,7 +126,12 @@ ul{
 }
 
 .d-lg-none{
-    @media(min-width: 1024px){
+    @media(min-width: 992px){
+        display: none;
+    }
+}
+.d-xs-none{
+    @media(max-width: 991px){
         display: none;
     }
 }

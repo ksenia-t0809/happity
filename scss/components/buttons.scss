@@ -131,6 +131,9 @@
         height: auto;
         padding: 0.188rem 0.8rem;
         line-height: 1.5;
+        @include respond-to(sm){
+            padding: 0.188rem 0.5rem;
+        }
     }
 }
 // ----- /BUTTONS ----- //
