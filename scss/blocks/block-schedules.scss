@@ -46,7 +46,7 @@
     }
     .banner--other-classes {
         margin-bottom: 2.1rem;
-        @include respond-to(sm){
+        @include respond-to(xs){
             margin-bottom: 0;
         }
     }
@@ -80,6 +80,19 @@
     .banner--list-view-image{
         @include respond-to(sm){
             margin-bottom: 0;
+        }
+    }
+    .button-mob {
+        display: none;
+        @include respond-to(sm){
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 1px 1px 16px 5px rgb(0 0 0 / 5%);
+            padding: 1.19rem 1.5rem;
+            display: block;
         }
     }
 }
