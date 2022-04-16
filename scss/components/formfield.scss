@@ -88,6 +88,7 @@
         color: $dark_grey;
         padding-left: 1.8rem;
         @include flex;
+        flex-wrap: nowrap;
         align-items: flex-start;
         cursor: pointer;
         font-family: $font-family-base;

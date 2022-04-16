@@ -27,6 +27,18 @@ $(document).ready(function(){
         e.preventDefault();
     })
 
+    // Modal
+    $('.btn-modal').on('click', function(e){
+        $('.modal').addClass('show');
+        $('body').addClass('overflow');
+        e.preventDefault();
+    });
+
+    $('.modal .btn-close').on('click', function(e){
+        $('.modal').removeClass('show');
+        $('body').removeClass('overflow');
+        e.preventDefault();
+    })
     
     
     if ( $(window).width() >= 992 ){

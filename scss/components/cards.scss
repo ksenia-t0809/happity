@@ -648,17 +648,19 @@
         }
         .card-image{
             max-height: 20.25rem;
+            margin-bottom: -0.5rem;
             @include respond-to(sm){
                 width: 100%;
                 height: 21.75rem;
                 margin-top: 0;
+                margin-bottom: 0.1rem;
             }
             @include respond-to(xs){
                 height: 9.75rem;
             }
         }
         .card-title{
-            margin-top: 1.75rem;
+            margin-top: 2.25rem;
             @include flex;
             @include respond-to(sm){
                 flex-direction: column;
@@ -675,7 +677,7 @@
                 }
             }
             .underline{
-                color: $dark-grey;
+                color: $dark_grey;
                 text-decoration: underline;
                 margin-bottom: 1rem;
                 @include respond-to(sm){

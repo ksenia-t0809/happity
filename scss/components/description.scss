@@ -61,7 +61,7 @@
             padding-left: 1.3rem;
             &::before{
                 content: '';
-                background-color: $dark-grey;
+                background-color: $dark_grey;
                 width: 0.25rem;
                 height: 0.25rem;
                 @include border-radius(50%);

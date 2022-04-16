@@ -13,6 +13,7 @@ body {
   line-height: 1.375rem;
   color: #363A3C;
   margin: 0;
+  transition: overflow 0.4s;
 }
 body.overflow {
   overflow: hidden;
@@ -755,6 +756,7 @@ h5 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-start;
   cursor: pointer;
   font-family: "Asap", sans-serif;
@@ -1539,12 +1541,14 @@ h5 {
 }
 .card--expanded .card-image {
   max-height: 20.25rem;
+  margin-bottom: -0.5rem;
 }
 @media (max-width: 991px) {
   .card--expanded .card-image {
     width: 100%;
     height: 21.75rem;
     margin-top: 0;
+    margin-bottom: 0.1rem;
   }
 }
 @media (max-width: 767px) {
@@ -1553,7 +1557,7 @@ h5 {
   }
 }
 .card--expanded .card-title {
-  margin-top: 1.75rem;
+  margin-top: 2.25rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -2714,6 +2718,169 @@ h5 {
 .map {
   height: 11.0625rem;
   margin-bottom: 1.5rem;
+}
+
+.modal {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+.modal.show {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s linear;
+}
+.modal.show .modal-wrapper {
+  transform: none;
+  opacity: 1;
+  transition: transform 0.3s ease-out;
+}
+.modal .modal-wrapper {
+  max-width: 58.3125rem;
+  margin: 1.75rem auto;
+  min-height: calc(100% - 3.5rem);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: transform 0.3s ease-out;
+  transform: translateY(-10%);
+  opacity: 0;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .modal .modal-wrapper {
+    max-width: 45.3125rem;
+  }
+}
+@media (max-width: 991px) {
+  .modal .modal-wrapper {
+    max-width: 21.5rem;
+  }
+}
+.modal .modal-content {
+  background-color: #F2EDF7;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  pointer-events: auto;
+  padding: 4.9375rem 6.1rem;
+}
+@media (max-width: 1023px) {
+  .modal .modal-content {
+    padding: 4.9375rem 3.1rem;
+  }
+}
+@media (max-width: 991px) {
+  .modal .modal-content {
+    padding: 2.2375rem 1rem 2.5rem;
+  }
+}
+.modal .btn-close {
+  position: absolute;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  top: 1.1rem;
+}
+@media (max-width: 991px) {
+  .modal .btn-close {
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+}
+.modal h3 {
+  color: #64358C;
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 991px) {
+  .modal h3 {
+    margin-bottom: 0.8rem;
+  }
+}
+.modal p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+@media (max-width: 991px) {
+  .modal p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+.modal form {
+  width: 100%;
+  max-width: 28rem;
+  margin-top: 0.8rem;
+  margin-bottom: 2.8rem;
+}
+@media (max-width: 991px) {
+  .modal form {
+    margin-top: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.modal form .formfield {
+  margin-bottom: 0.5rem;
+}
+.modal form .formfield input {
+  padding-left: 0.9rem;
+}
+.modal form .formfield input::placeholder {
+  color: #363A3C;
+}
+.modal form .formfield--form-check {
+  padding-left: 2.4rem;
+}
+.modal form .formfield--form-check .form-check-input {
+  background-color: #fff;
+  border-color: #fff;
+  width: 1.25rem;
+  flex: 0 0 1.25rem;
+  height: 1.25rem;
+  margin-left: -2.4rem;
+  margin-right: 0.9rem;
+  margin-top: 0.1rem;
+}
+.modal form .formfield--form-check .form-check-input:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='9' viewBox='0 0 13 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L5 8L12 1' stroke='%238047B0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.modal form .btn--yellow {
+  margin-top: 1.2rem;
+  padding: 0.575rem 1.3rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.8rem;
+}
+@media (max-width: 991px) {
+  .modal form .btn--yellow {
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+}
+.modal .btn--link-underline {
+  color: #363A3C;
+  font-size: 1rem;
+  font-family: "Asap", sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-left: 0.2rem;
 }
 
 .components-box .components-title {
