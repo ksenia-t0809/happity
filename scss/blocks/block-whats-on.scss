@@ -1,0 +1,20 @@
+// ----- BLOCK WHATS ON ----- //
+.block-whats-on{
+    padding-top: 4.5rem;
+    padding-bottom: 3.9rem;
+    @include respond-to(sm){
+        padding-top: 0.8rem;
+        padding-bottom: 2.6rem;
+    }
+    h3{
+        color: $purple;
+        margin-bottom: 1.9rem;
+        @include respond-to(sm){
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-bottom: 0.3rem;
+        }
+    }
+}
+// ----- /BLOCK WHATS ON ----- //
+// 

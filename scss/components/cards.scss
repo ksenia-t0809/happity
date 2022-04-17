@@ -131,6 +131,14 @@
         padding: 0.8rem 0;
         box-shadow: none;
         margin-bottom: 0;
+        @include respond-to(sm){
+            padding: 0.625rem 0;
+        }
+        > div{
+            @include respond-to(sm){
+                margin-bottom: 0.4rem;
+            }
+        }
         .card-title{
             color: $purple;
             letter-spacing: 0.5px;
@@ -138,22 +146,44 @@
             font-family: $font-family-heading;
             flex: 0 0 15rem;
             max-width: 15rem;
+            @include respond-to(sm){
+                order: 2;
+                flex: 0 0 59%;
+                max-width: 59%;
+                margin-bottom: 0;
+            }
         }
         .time{
             font-family: $font-family-heading;
             letter-spacing: 0.5px;
             flex: 0 0 8.8rem;
             max-width: 8.8rem;
+            @include respond-to(sm){
+                order: 3;
+                flex: 0 0 39.3%;
+                max-width: 39.3%;
+            }
         }
         .period{
             font-size: 1rem;
             line-height: 0.875rem;
+            @include respond-to(sm){
+                order: 4;
+                flex: 0 0 59%;
+                max-width: 59%;
+                margin-bottom: 0;
+            }
         }
         .day{
             font-weight: 600;
             font-size: 0.9375rem;
             flex: 0 0 3rem;
             max-width: 3rem;
+            @include respond-to(sm){
+                order: 1;
+                flex: 0 0 39.3%;
+                max-width: 39.3%;
+            }
         }
     }
     &--contact{
@@ -768,6 +798,20 @@
             margin-bottom: 1.4rem;
             @include respond-to(sm){
                 margin-bottom: 0.7rem;
+            }
+        }
+        .card-item{
+            h3{
+                margin-bottom: 1rem;
+                color: $purple;
+                @include respond-to(sm){
+                    font-size: 1rem;
+                    line-height: 1.375rem;
+                    margin-bottom: 1.3rem;
+                }
+            }
+            p{
+                margin-bottom: 1.4rem;
             }
         }
     }

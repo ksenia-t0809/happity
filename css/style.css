@@ -198,6 +198,10 @@ ul {
   color: #363A3C;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
@@ -946,6 +950,16 @@ h5 {
   box-shadow: none;
   margin-bottom: 0;
 }
+@media (max-width: 991px) {
+  .card--date {
+    padding: 0.625rem 0;
+  }
+}
+@media (max-width: 991px) {
+  .card--date > div {
+    margin-bottom: 0.4rem;
+  }
+}
 .card--date .card-title {
   color: #64358C;
   letter-spacing: 0.5px;
@@ -954,21 +968,51 @@ h5 {
   flex: 0 0 15rem;
   max-width: 15rem;
 }
+@media (max-width: 991px) {
+  .card--date .card-title {
+    order: 2;
+    flex: 0 0 59%;
+    max-width: 59%;
+    margin-bottom: 0;
+  }
+}
 .card--date .time {
   font-family: "Nunito", sans-serif;
   letter-spacing: 0.5px;
   flex: 0 0 8.8rem;
   max-width: 8.8rem;
 }
+@media (max-width: 991px) {
+  .card--date .time {
+    order: 3;
+    flex: 0 0 39.3%;
+    max-width: 39.3%;
+  }
+}
 .card--date .period {
   font-size: 1rem;
   line-height: 0.875rem;
+}
+@media (max-width: 991px) {
+  .card--date .period {
+    order: 4;
+    flex: 0 0 59%;
+    max-width: 59%;
+    margin-bottom: 0;
+  }
 }
 .card--date .day {
   font-weight: 600;
   font-size: 0.9375rem;
   flex: 0 0 3rem;
   max-width: 3rem;
+}
+@media (max-width: 991px) {
+  .card--date .day {
+    order: 1;
+    flex: 0 0 39.3%;
+    max-width: 39.3%;
+  }
 }
 .card--contact {
   background-color: #FFEAF3;
@@ -1692,6 +1736,20 @@ h5 {
     margin-bottom: 0.7rem;
   }
 }
+.card--expanded .card-item h3 {
+  margin-bottom: 1rem;
+  color: #64358C;
+}
+@media (max-width: 991px) {
+  .card--expanded .card-item h3 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.3rem;
+  }
+}
+.card--expanded .card-item p {
+  margin-bottom: 1.4rem;
+}
 
 .sidebar {
   max-width: 21.9375rem;
@@ -1897,6 +1955,14 @@ h5 {
 .banner--activities-list {
   background: #fff;
   padding: 0.9rem 0.1rem 2.2rem;
+  margin-bottom: 2.5rem;
+  max-width: 46.0625rem;
+}
+@media (max-width: 991px) {
+  .banner--activities-list {
+    padding-bottom: 0;
+    margin-bottom: 0.7rem;
+  }
 }
 .banner--activities-list .banner-title {
   color: #64358C;
@@ -1921,6 +1987,11 @@ h5 {
   line-height: 1rem;
   margin-bottom: 1.6rem;
 }
+@media (max-width: 991px) {
+  .banner--activities-list .distance {
+    margin-bottom: 0.4rem;
+  }
+}
 .banner--activities-list .distance img {
   flex: 0 0 0.625rem;
   max-width: 0.625rem;
@@ -1934,6 +2005,11 @@ h5 {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .banner--activities-list .run-by {
+    margin-top: 1rem;
+  }
 }
 .banner--activities-list .run-by a {
   text-decoration: underline;
@@ -4000,6 +4076,79 @@ h5 {
     display: block;
   }
 }
+.block-banner--cta {
+  background-color: #F2EDF7;
+  padding-top: 3.4rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 991px) {
+  .block-banner--cta {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
+  }
+}
+.block-banner--cta::after {
+  content: "";
+  background-image: url(../img/icon-curl-pink.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  right: -6.9rem;
+  bottom: -22.3rem;
+  opacity: 0.1;
+  width: 48.125rem;
+  height: 47rem;
+}
+@media (max-width: 991px) {
+  .block-banner--cta::after {
+    width: 17.75rem;
+    height: 17.3125rem;
+    bottom: -4rem;
+    right: -3.5rem;
+    z-index: -1;
+  }
+}
+.block-banner--cta h2 {
+  color: #363A3C;
+}
+@media (max-width: 991px) {
+  .block-banner--cta h2 {
+    margin-bottom: 0.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .block-banner--cta .container {
+    max-width: 76.4rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-banner--cta .container {
+    padding: 0 1.2rem;
+  }
+}
+.block-banner--cta h3 {
+  margin-bottom: 2.2rem;
+}
+@media (max-width: 991px) {
+  .block-banner--cta h3 {
+    margin-bottom: 1.4rem;
+  }
+}
+.block-banner--cta .btn {
+  margin-top: -0.7rem;
+  padding: 0.75rem 2.2rem;
+  height: 2.8125rem;
+}
+@media (max-width: 991px) {
+  .block-banner--cta .btn {
+    margin-right: 0.1rem;
+    margin-left: 0.3rem;
+    display: block;
+    height: 2.1rem;
+    padding: 0.35rem 2.2rem;
+  }
+}
 
 .block-listing {
   color: #fff;
@@ -4589,6 +4738,124 @@ h5 {
     box-shadow: 1px 1px 16px 5px rgba(0, 0, 0, 0.05);
     padding: 1.19rem 1.5rem;
     display: block;
+  }
+}
+
+.block-company .banner--other-classes {
+  margin-bottom: 2.9rem;
+}
+@media (max-width: 991px) {
+  .block-company .banner--other-classes {
+    margin-bottom: 0.65rem;
+  }
+}
+.block-company .col--left {
+  flex: 0 0 66.8%;
+  max-width: 66.8%;
+}
+@media (max-width: 991px) {
+  .block-company .col--left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.block-company .col--right {
+  flex: 0 0 33.2%;
+  max-width: 33.2%;
+}
+@media (max-width: 991px) {
+  .block-company .col--right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.block-company .card--expanded {
+  margin-top: -0.2rem;
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 991px) {
+  .block-company .card--expanded {
+    margin-bottom: 0.6rem;
+  }
+}
+.block-company .card--expanded .card-head {
+  padding-bottom: 0;
+  margin-bottom: 2.2rem;
+}
+@media (max-width: 991px) {
+  .block-company .card--expanded .card-head {
+    padding-bottom: 0.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.block-company .card--expanded .card-title {
+  margin-top: 0;
+}
+.block-company .card--expanded .card-title h3 {
+  margin-bottom: 0.7rem;
+}
+@media (max-width: 991px) {
+  .block-company .card--expanded .card-title h3 {
+    margin-bottom: 0.2rem;
+  }
+}
+.block-company .card--expanded .card-title > img {
+  width: 11.9375rem;
+  flex: 0 0 11.9375rem;
+  height: 9rem;
+  margin-top: -3rem;
+  margin-bottom: -0.3rem;
+  margin-right: 0.2rem;
+}
+@media (max-width: 991px) {
+  .block-company .card--expanded .card-title > img {
+    width: 6.5rem;
+    height: 4.875rem;
+    flex: 0 0 6.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-company .card--expanded .card-body {
+    padding: 0 1.5rem;
+  }
+}
+.block-company .card--contact {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .block-company .card--contact {
+    margin-bottom: 1.9rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-company .map {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.block-whats-on {
+  padding-top: 4.5rem;
+  padding-bottom: 3.9rem;
+}
+@media (max-width: 991px) {
+  .block-whats-on {
+    padding-top: 0.8rem;
+    padding-bottom: 2.6rem;
+  }
+}
+.block-whats-on h3 {
+  color: #64358C;
+  margin-bottom: 1.9rem;
+}
+@media (max-width: 991px) {
+  .block-whats-on h3 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 0.3rem;
   }
 }
 

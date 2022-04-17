@@ -96,6 +96,67 @@
             }
         }
     }
+    &--cta{
+        background-color: $mauve_tint;
+        padding-top: 3.4rem;
+        padding-bottom: 4rem;
+        @include respond-to(sm){
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            margin-bottom: 1.3rem;
+        }
+        &::after{
+            content: '';
+            background-image: url(../img/icon-curl-pink.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: contain;
+            right: -6.9rem;
+            bottom: -22.3rem;
+            opacity: 0.1;
+            width: 48.125rem;
+            height: 47rem;
+            @include respond-to(sm){
+                width: 17.75rem;
+                height: 17.3125rem;
+                bottom: -4rem;
+                right: -3.5rem;
+                z-index: -1;
+            }
+        }
+        h2{
+            color: $dark_grey;
+            @include respond-to(sm){
+                margin-bottom: 0.8rem;
+            }
+        }
+        .container{
+            @media(min-width: 1200px){
+                max-width: 76.4rem;
+            }
+            @include respond-to(sm){
+                padding: 0 1.2rem;
+            }
+        }
+        h3{
+            margin-bottom: 2.2rem;
+            @include respond-to(sm){
+                margin-bottom: 1.4rem;
+            }
+        }
+        .btn{
+            margin-top: -0.7rem;
+            padding: 0.75rem 2.2rem;
+            height: 2.8125rem;
+            @include respond-to(sm){
+                margin-right: 0.1rem;
+                margin-left: 0.3rem;
+                display: block;
+                height: 2.1rem;
+                padding: 0.35rem 2.2rem;
+            }
+        }
+    }
 }
 // ----- /BLOCK BANNER ----- //
 // 
