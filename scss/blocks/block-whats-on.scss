@@ -15,6 +15,22 @@
             margin-bottom: 0.3rem;
         }
     }
+    &--two{
+        padding-top: 5rem;
+        padding-bottom: 5.7rem;
+        @include respond-to(sm){
+            padding-top: 3.7rem;
+            padding-bottom: 4rem;
+        }
+        .container{
+            @media(min-width: 1200px){
+                max-width: 76.3rem;
+            }
+            @include respond-to(sm){
+                padding: 0 1.8rem;
+            }
+        }
+    }
 }
 // ----- /BLOCK WHATS ON ----- //
 // 

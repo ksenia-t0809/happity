@@ -1,0 +1,52 @@
+// ----- BLOCK PROVIDER ----- //
+.block-provider{
+    padding-bottom: 3.4rem;
+    @include respond-to(sm){
+        padding-bottom: 0;
+    }
+    .banner--other-classes{
+        margin-bottom: 1.7rem;
+        @include respond-to(sm){
+            margin-bottom: 0.6rem;
+        }
+    }
+    .card{
+        &--expanded{
+            margin-top: 2.9rem;
+            border-bottom: 1px solid rgba(54, 58, 60, 0.25);
+            padding-bottom: 0.9rem;
+            margin-bottom: 2.5rem;
+            @include respond-to(sm){
+                margin-top: 0;
+            }
+            .card-title{
+                > img{
+                    width: 9.75rem;
+                    flex: 0 0 9.75rem;
+                    margin-right: 1.9rem;
+                    margin-top: -3.6rem;
+                    margin-bottom: 0.3rem;
+                    @include respond-to(sm){
+                        width: 6.1875rem;
+                        flex: 0 0 6.1875rem;
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            .card-item{
+                p:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &--contact{
+            margin-bottom: 1.3rem;
+            @include respond-to(sm){
+                margin-top: 1.2rem;
+            }
+        }
+    }
+}
+// ----- /BLOCK PROVIDER ----- //
+// 

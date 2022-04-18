@@ -47,6 +47,7 @@
             text-transform: uppercase;
             @include respond-to(sm){
                 margin-top: 1rem;
+                margin-right: -1rem;
             }
             a{
                 text-decoration: underline;

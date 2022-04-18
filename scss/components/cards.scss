@@ -7,6 +7,11 @@
     @include respond-to(sm){
         margin-bottom: 1.25rem;
     }
+    &.d-xs-none{
+        @include respond-to(sm){
+            display: none
+        }
+    }
     .card-body{
         @include flex;
         padding: 1.4rem 1.7rem 1.4rem 1.5rem;
@@ -813,6 +818,31 @@
             p{
                 margin-bottom: 1.4rem;
             }
+        }
+    }
+    &--class-listing{
+        color: $dark_grey;
+        box-shadow: none;
+        margin-bottom: 1.6rem;
+        .card-title{
+            color: $purple;
+            font-weight: 600;
+        }
+        .time{
+            font-size: 0.8125rem;
+            line-height: 1.25rem;
+            font-weight: 500;
+            font-family: $font-family-base;
+        }
+        h5{
+            color: $dark_grey;
+            margin-bottom: 0.35rem;
+            font-family: $font-family-base;
+        }
+    }
+    &--facebook{
+        @include respond-to(sm){
+            margin-bottom: 2rem;
         }
     }
 }

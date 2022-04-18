@@ -6,6 +6,11 @@
             margin-bottom: 0.65rem;
         }
     }
+    .row{
+        @include respond-to(sm){
+            margin: 0;
+        }
+    }
     .col{
         &--left{
             flex: 0 0 66.8%;
@@ -22,6 +27,7 @@
             @include respond-to(sm){
                 flex: 0 0 100%;
                 max-width: 100%;
+                padding: 0;
             }
         }
     }
@@ -30,7 +36,9 @@
             margin-top: -0.2rem;
             margin-bottom: 3.2rem;
             @include respond-to(sm){
-                margin-bottom: 0.6rem;
+                margin-bottom: 0.2rem;
+                margin-left: -1.5rem;
+                margin-right: -1.5rem;
             }
             .card-head{
                 padding-bottom: 0;
@@ -75,6 +83,7 @@
         margin-bottom: 1.5rem;
         @include respond-to(sm){
             margin-bottom: 1.9rem;
+            margin-top: 0;
         }
     }
     .map{
