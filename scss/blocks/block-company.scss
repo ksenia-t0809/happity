@@ -47,31 +47,32 @@
                     padding-bottom: 0.2rem;
                     margin-bottom: 1.5rem;
                 }
-            }
-            .card-title{
-                margin-top: 0;
-                h3{
-                    margin-bottom: 0.7rem;
-                    @include respond-to(sm){
-                        margin-bottom: 0.2rem;
+                .card-title{
+                    margin-top: 0;
+                    h3{
+                        margin-bottom: 0.7rem;
+                        @include respond-to(sm){
+                            margin-bottom: 0.2rem;
+                        }
+                    }
+                    > img{
+                        width: 11.9375rem;
+                        flex: 0 0 11.9375rem;
+                        height: 9rem;
+                        margin-top: -3rem;
+                        margin-bottom: -0.3rem;
+                        margin-right: 0.2rem;      
+                        @include respond-to(sm){
+                            width: 6.5rem;
+                            height: 4.875rem;
+                            flex: 0 0 6.5rem;
+                            margin-top: 0;
+                            margin-bottom: 0.5rem;
+                        }                                      
                     }
                 }
-                > img{
-                    width: 11.9375rem;
-                    flex: 0 0 11.9375rem;
-                    height: 9rem;
-                    margin-top: -3rem;
-                    margin-bottom: -0.3rem;
-                    margin-right: 0.2rem;      
-                    @include respond-to(sm){
-                        width: 6.5rem;
-                        height: 4.875rem;
-                        flex: 0 0 6.5rem;
-                        margin-top: 0;
-                        margin-bottom: 0.5rem;
-                    }                                      
-                }
             }
+            
             .card-body{
                 @include respond-to(sm){
                     padding: 0 1.5rem;

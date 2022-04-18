@@ -897,6 +897,20 @@ h5 {
     margin-right: 0.5rem;
   }
 }
+.card .distance {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 1rem;
+  margin-bottom: 1.1rem;
+}
+.card .distance img {
+  flex: 0 0 0.625rem;
+  max-width: 0.625rem;
+  margin-right: 0.7rem;
+}
 .card .btn--enquiry {
   padding: 0.35rem 0.2625rem;
   width: 100%;
@@ -1018,6 +1032,40 @@ h5 {
     flex: 0 0 39.3%;
     max-width: 39.3%;
   }
+}
+.card--date-cols {
+  max-width: 20.5rem;
+  padding: 0.625rem 0;
+  margin-bottom: 1.6rem;
+}
+.card--date-cols .day {
+  order: 1;
+  flex: 0 0 38.7%;
+  max-width: 38.7%;
+  margin-bottom: 0.3rem;
+}
+.card--date-cols .card-title {
+  order: 2;
+  flex: 0 0 57.4%;
+  max-width: 57.4%;
+  margin-bottom: 0.3rem;
+}
+@media (max-width: 991px) {
+  .card--date-cols .card-title {
+    font-size: 0.875rem;
+    padding: 0;
+    line-height: 1rem;
+  }
+}
+.card--date-cols .time {
+  order: 3;
+  flex: 0 0 38.7%;
+  max-width: 38.7%;
+}
+.card--date-cols .period {
+  order: 4;
+  flex: 0 0 57.4%;
+  max-width: 57.4%;
 }
 .card--contact {
   background-color: #FFEAF3;
@@ -1755,6 +1803,43 @@ h5 {
 .card--expanded .card-item p {
   margin-bottom: 1.4rem;
 }
+.card--expanded .card-item .card-item-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+@media (max-width: 991px) {
+  .card--expanded .card-item .card-item-title {
+    margin-bottom: 0.4rem;
+  }
+}
+.card--expanded .card-item .card-item-title h3 {
+  margin-bottom: 0;
+}
+.card--expanded .card-item .card-item-title .icon-wrap {
+  width: 1.125rem;
+  flex: 0 0 1.125rem;
+  height: 1.125rem;
+  margin-left: -0.1rem;
+  margin-right: 0.8rem;
+  margin-top: -0.1rem;
+}
+@media (max-width: 991px) {
+  .card--expanded .card-item .card-item-title .icon-wrap {
+    width: 0.875rem;
+    flex: 0 0 0.875rem;
+    margin-top: -0.4rem;
+    height: 0.875rem;
+  }
+}
+.card--expanded .card-item .card-item-title .icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .card--class-listing {
   color: #363A3C;
   box-shadow: none;
@@ -1778,6 +1863,57 @@ h5 {
 @media (max-width: 991px) {
   .card--facebook {
     margin-bottom: 2rem;
+  }
+}
+.card--expanded-map .map {
+  margin-bottom: 2.5rem;
+  height: 17.125rem;
+}
+@media (max-width: 991px) {
+  .card--expanded-map .map {
+    height: 10.5rem;
+  }
+}
+.card--expanded-map .card-head {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0.2rem;
+}
+.card--expanded-map .card-head .card-title {
+  color: #64358C;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .card--expanded-map .card-head .card-title {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+.card--expanded-map .card-body {
+  padding-top: 0;
+}
+@media (max-width: 991px) {
+  .card--expanded-map .card-body {
+    align-items: stretch;
+  }
+}
+.card--expanded-map .address .btn--link-underline {
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+  margin-top: 0.6rem;
+}
+@media (max-width: 991px) {
+  .card--expanded-map .card-item {
+    box-shadow: 1px 1px 16px 5px rgba(0, 0, 0, 0.05);
+    margin: 0 -1.5rem;
+    padding: 1.35rem 1.5rem 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .card--expanded-map .card-item .card--date-cols:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -2825,6 +2961,11 @@ h5 {
 .map {
   height: 11.0625rem;
   margin-bottom: 1.5rem;
+}
+.map > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .modal {
@@ -4828,18 +4969,18 @@ h5 {
     margin-bottom: 1.5rem;
   }
 }
-.block-company .card--expanded .card-title {
+.block-company .card--expanded .card-head .card-title {
   margin-top: 0;
 }
-.block-company .card--expanded .card-title h3 {
+.block-company .card--expanded .card-head .card-title h3 {
   margin-bottom: 0.7rem;
 }
 @media (max-width: 991px) {
-  .block-company .card--expanded .card-title h3 {
+  .block-company .card--expanded .card-head .card-title h3 {
     margin-bottom: 0.2rem;
   }
 }
-.block-company .card--expanded .card-title > img {
+.block-company .card--expanded .card-head .card-title > img {
   width: 11.9375rem;
   flex: 0 0 11.9375rem;
   height: 9rem;
@@ -4848,7 +4989,7 @@ h5 {
   margin-right: 0.2rem;
 }
 @media (max-width: 991px) {
-  .block-company .card--expanded .card-title > img {
+  .block-company .card--expanded .card-head .card-title > img {
     width: 6.5rem;
     height: 4.875rem;
     flex: 0 0 6.5rem;
@@ -4970,6 +5111,57 @@ h5 {
 @media (max-width: 991px) {
   .block-provider .card--contact {
     margin-top: 1.2rem;
+  }
+}
+
+.block-venue {
+  padding-bottom: 5.6rem;
+}
+@media (max-width: 991px) {
+  .block-venue {
+    padding-bottom: 0;
+  }
+}
+.block-venue .banner--other-classes {
+  margin-bottom: 1.8rem;
+}
+@media (max-width: 991px) {
+  .block-venue .banner--other-classes {
+    margin-bottom: 1.1rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-venue .card--expanded-map {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
+.block-venue .card--expanded-map .card-head {
+  margin-bottom: 0.2rem;
+}
+@media (max-width: 991px) {
+  .block-venue .card--expanded-map .map {
+    margin-bottom: 1.4rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-venue .card--expanded-map .card-body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-venue .card--expanded-map .card--date-cols .card-title {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+.block-venue .address {
+  margin-bottom: 3.1rem;
+}
+@media (max-width: 991px) {
+  .block-venue .address {
+    margin-bottom: 1.7rem;
   }
 }
 

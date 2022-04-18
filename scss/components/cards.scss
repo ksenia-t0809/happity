@@ -82,6 +82,17 @@
             }
         }
     }
+    .distance{
+        @include flex;
+        align-items: center;
+        line-height: 1rem;
+        margin-bottom: 1.1rem;
+        img{
+            flex: 0 0 0.625rem;
+            max-width: 0.625rem;
+            margin-right: 0.7rem;
+        }
+    }
     .btn--enquiry{
         padding: 0.35rem 0.2625rem;
         width: 100%;
@@ -189,6 +200,38 @@
                 flex: 0 0 39.3%;
                 max-width: 39.3%;
             }
+        }
+    }
+    &--date-cols{
+        max-width: 20.5rem;
+        padding: 0.625rem 0;
+        margin-bottom: 1.6rem;
+        .day{
+            order: 1;
+            flex: 0 0 38.7%;
+            max-width: 38.7%;
+            margin-bottom: 0.3rem;
+        }
+        .card-title{
+            order: 2;
+            flex: 0 0 57.4%;
+            max-width: 57.4%;
+            margin-bottom: 0.3rem;
+            @include respond-to(sm){
+                font-size: 0.875rem;
+                padding: 0;
+                line-height: 1rem;
+            }
+        }
+        .time{
+            order: 3;
+            flex: 0 0 38.7%;
+            max-width: 38.7%;
+        }
+        .period{
+            order: 4;
+            flex: 0 0 57.4%;
+            max-width: 57.4%;
         }
     }
     &--contact{
@@ -818,6 +861,36 @@
             p{
                 margin-bottom: 1.4rem;
             }
+            .card-item-title{
+                @include flex;
+                align-items: center;
+                margin-bottom: 0.9rem;
+                @include respond-to(sm){
+                    margin-bottom: 0.4rem;
+                }
+                h3{
+                    margin-bottom: 0;
+                }
+                .icon-wrap {
+                    width: 1.125rem;
+                    flex: 0 0 1.125rem;
+                    height: 1.125rem;
+                    margin-left: -0.1rem;
+                    margin-right: 0.8rem;
+                    margin-top: -0.1rem;
+                    @include respond-to(sm){
+                        width: 0.875rem;
+                        flex: 0 0 0.875rem;
+                        margin-top: -0.4rem;
+                        height: 0.875rem;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
         }
     }
     &--class-listing{
@@ -845,6 +918,56 @@
             margin-bottom: 2rem;
         }
     }
+    &--expanded-map{
+        .map{
+            margin-bottom: 2.5rem;
+            height: 17.125rem;
+            @include respond-to(sm){
+                height: 10.5rem;
+            }
+        }
+        .card-head{
+            padding-bottom: 0;
+            border-bottom: 0;
+            margin-bottom: 0.2rem;
+            .card-title{
+                color: $purple;
+                margin-bottom: 0;
+                @include respond-to(sm){
+                    padding: 0 0.5rem;
+                    font-size: 1rem;
+                    line-height: 1.375rem;
+                }
+            }
+        }
+        .card-body{
+            padding-top: 0;
+            @include respond-to(sm){
+                align-items: stretch;
+            }
+        }
+        .address{
+            .btn--link-underline{
+                font-size: 0.8125rem;
+                line-height: 0.8125rem;
+                margin-top: 0.6rem;
+            }
+        }
+        .card-item{
+            @include respond-to(sm){
+                box-shadow: 1px 1px 16px 5px rgb(0 0 0 / 5%);
+                margin: 0 -1.5rem;
+                padding: 1.35rem 1.5rem 2.2rem;
+                margin-bottom: 1.5rem;
+            }
+            .card--date-cols:last-child{
+                @include respond-to(sm){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
+
 // ----- /CARDS ----- //
 // 
