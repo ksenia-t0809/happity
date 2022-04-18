@@ -808,6 +808,11 @@ h5 {
     display: none;
   }
 }
+@media (min-width: 992px) {
+  .card.d-lg-none {
+    display: none;
+  }
+}
 .card .card-body {
   display: -ms-flexbox;
   display: flex;

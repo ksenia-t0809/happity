@@ -12,6 +12,11 @@
             display: none
         }
     }
+    &.d-lg-none{
+        @media(min-width: 992px){
+            display: none;
+        }
+    }
     .card-body{
         @include flex;
         padding: 1.4rem 1.7rem 1.4rem 1.5rem;
