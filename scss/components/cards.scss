@@ -897,6 +897,11 @@
                 }
             }
         }
+        .card--date-cols{
+            .card-title{
+                margin-top: 0;
+            }
+        }
     }
     &--class-listing{
         color: $dark_grey;

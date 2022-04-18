@@ -1845,6 +1845,9 @@ h5 {
   height: 100%;
   object-fit: contain;
 }
+.card--expanded .card--date-cols .card-title {
+  margin-top: 0;
+}
 .card--class-listing {
   color: #363A3C;
   box-shadow: none;
