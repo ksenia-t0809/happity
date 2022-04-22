@@ -121,6 +121,10 @@
         }
     }
     &--category{
+        margin-bottom: 1.8rem;
+        @include respond-to(sm){
+            margin-bottom: 1rem;
+        }
         h3{
             font-size: 1.5625rem;
             font-weight: 500;
@@ -128,19 +132,38 @@
             color: $purple;
             margin-top: -0.2rem;
             margin-bottom: 0.6rem;
+            @include respond-to(sm){
+                font-size: 1rem;
+                line-height: 1.375rem;
+                margin-bottom: 0.4rem;
+            }
         }
         p{
             font-weight: 500;
             font-size: 0.875rem;
             line-height: 1.375rem;
-            max-width: 20rem;
+            max-width: 24rem;
         }
         .card-image {
             max-height: 6.5rem;
+            @include respond-to(sm){
+                margin-top: -0.2rem;
+                width: 4.4125rem;
+            }
         }
         .card-body-col:last-child {
             flex: 0 0 26.8%;
             max-width: 26.8%;
+        }
+        .band{
+            @include respond-to(sm){
+                padding: 0 0.8rem;
+            }
+        }
+        .card-body{
+            @include respond-to(sm){
+                padding: 1.25rem 1rem 1.5rem 1rem;
+            }
         }
     }
     &--date{
