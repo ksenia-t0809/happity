@@ -1,18 +1,25 @@
 // ----- BASE ----- //
-// @font-face {
-//     font-family: "Filson Soft";
-//     src: url("../fonts/filsonSoft/FilsonSoftBold.ttf") format("trueType"),
-//         url("../fonts/filsonSoft/FilsonSoftBold.woff2") format("woff2"),
-//         url("../fonts/filsonSoft/FilsonSoftBold.woff") format("woff");
-//     font-weight: 700;
-// }
-// @font-face {
-//     font-family: "Filson Soft";
-//     src: url("../fonts/filsonSoft/FilsonSoftMedium.ttf") format("trueType"),
-//         url("../fonts/filsonSoft/FilsonSoftMedium.woff2") format("woff2"),
-//         url("../fonts/filsonSoft/FilsonSoftMedium.woff") format("woff");
-//     font-weight: 500;
-// }
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/filsonSoft/FilsonProBold-Bold.ttf") format("trueType"),
+        url("../fonts/filsonSoft/FilsonProBold-Bold.woff2") format("woff2"),
+        url("../fonts/filsonSoft/FilsonProBold-Bold.woff") format("woff");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/filsonSoft/FilsonProMedium-Medium.ttf") format("trueType"),
+        url("../fonts/filsonSoft/FilsonProMedium-Medium.woff2") format("woff2"),
+        url("../fonts/filsonSoft/FilsonProMedium-Medium.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/filsonSoft/FilsonProRegular-Regular.ttf") format("trueType"),
+        url("../fonts/filsonSoft/FilsonProRegular-Regular.woff2") format("woff2"),
+        url("../fonts/filsonSoft/FilsonProRegular-Regular.woff") format("woff");
+    font-weight: 400;
+}
 *, *::before, *::after{
     box-sizing: border-box;
 }

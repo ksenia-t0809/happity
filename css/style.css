@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Filson Soft";
+  src: url("../fonts/filsonSoft/FilsonProBold-Bold.ttf") format("trueType"), url("../fonts/filsonSoft/FilsonProBold-Bold.woff2") format("woff2"), url("../fonts/filsonSoft/FilsonProBold-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Filson Soft";
+  src: url("../fonts/filsonSoft/FilsonProMedium-Medium.ttf") format("trueType"), url("../fonts/filsonSoft/FilsonProMedium-Medium.woff2") format("woff2"), url("../fonts/filsonSoft/FilsonProMedium-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Filson Soft";
+  src: url("../fonts/filsonSoft/FilsonProRegular-Regular.ttf") format("trueType"), url("../fonts/filsonSoft/FilsonProRegular-Regular.woff2") format("woff2"), url("../fonts/filsonSoft/FilsonProRegular-Regular.woff") format("woff");
+  font-weight: 400;
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -207,13 +222,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
 }
 
 h1, .h1 {
   font-size: 2.5rem;
   line-height: 3.125rem;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
 }
 @media (max-width: 1023px) {
@@ -258,7 +273,7 @@ h4 {
 h5 {
   font-size: 1rem;
   line-height: 1.375rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .lead {
@@ -285,8 +300,8 @@ h5 {
 }
 
 .btn {
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
+  font-family: "Filson Soft", sans-serif;
+  font-weight: 500;
   font-size: 1rem;
   display: inline-block;
   line-height: 1.25rem;
@@ -308,6 +323,7 @@ h5 {
   border-radius: 0.125rem;
   text-transform: uppercase;
   height: 2.5rem;
+  letter-spacing: 0.5px;
 }
 .btn--image {
   height: 7rem;
@@ -334,6 +350,7 @@ h5 {
   height: 1.875rem;
   padding: 0.3rem 1.5625rem;
   text-transform: none;
+  letter-spacing: 0;
 }
 .btn--thin {
   height: 2rem;
@@ -350,7 +367,7 @@ h5 {
   flex-wrap: nowrap;
   align-items: center;
   line-height: 0.8875rem;
-  font-weight: 500;
+  font-weight: 400;
   height: 1.5rem;
   letter-spacing: 0.5px;
   font-size: 0.875rem;
@@ -411,10 +428,9 @@ h5 {
   letter-spacing: 0.5px;
   height: 1.25rem;
   line-height: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
   border: 0;
   border-bottom: 1px solid #64358C;
-  font-family: "Asap", sans-serif;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -592,7 +608,7 @@ h5 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -680,6 +696,7 @@ h5 {
   border-radius: 0.125rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  font-weight: 400;
 }
 .formfield .formfield-input::placeholder {
   color: #AEACAC;
@@ -725,7 +742,7 @@ h5 {
 }
 .formfield--icon input {
   font-weight: 500;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
 }
 .formfield--select {
   width: 100%;
@@ -854,7 +871,7 @@ h5 {
 .card .time {
   font-size: 0.875rem;
   font-weight: 500;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   line-height: 1rem;
   margin-bottom: -0.1rem;
 }
@@ -1019,7 +1036,7 @@ h5 {
   color: #64358C;
   letter-spacing: 0.5px;
   font-weight: 500;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   flex: 0 0 15rem;
   max-width: 15rem;
 }
@@ -1032,7 +1049,7 @@ h5 {
   }
 }
 .card--date .time {
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   letter-spacing: 0.5px;
   flex: 0 0 8.8rem;
   max-width: 8.8rem;
@@ -1135,7 +1152,7 @@ h5 {
 }
 .card--contact .card-title {
   font-weight: 500;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   margin-bottom: 0.3rem;
 }
 .card--contact ul li {
@@ -1210,7 +1227,7 @@ h5 {
   color: #64358C;
   font-size: 1rem;
   line-height: 1.375rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-weight: 500;
   display: -ms-flexbox;
   display: flex;
@@ -1324,7 +1341,7 @@ h5 {
   border-radius: 0.125rem;
   overflow: hidden;
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 1.3rem;
 }
 @media (max-width: 1023px) {
   .card--category-image {
@@ -1367,9 +1384,8 @@ h5 {
   z-index: 10;
   font-size: 1.75rem;
   line-height: 2.4rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.5rem;
-  letter-spacing: 0.5px;
 }
 @media (max-width: 1023px) {
   .card--category-image h3 {
@@ -1395,7 +1411,7 @@ h5 {
   color: #64358C;
   letter-spacing: 0.5px;
   font-weight: 500;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
 }
 .card--listing h5 {
   color: #363A3C;
@@ -1576,7 +1592,7 @@ h5 {
   font-size: 0.875rem;
   line-height: 1rem;
   letter-spacing: 0.5px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -1749,7 +1765,7 @@ h5 {
   }
 }
 .card--expanded .card-title p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
 }
 .card--expanded .card-body {
   padding: 0.2rem 0.1rem;
@@ -1800,7 +1816,7 @@ h5 {
   margin-right: 0.1rem;
 }
 .card--expanded .card-info li span {
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-size: 0.875rem;
   line-height: 1.6rem;
   margin-bottom: -0.3rem;
@@ -2066,7 +2082,7 @@ h5 {
 }
 .sidebar .sidebar-menu {
   margin-top: 1.4rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
 }
 @media (max-width: 991px) {
   .sidebar .sidebar-menu {
@@ -2207,7 +2223,7 @@ h5 {
 }
 .banner--activities-list .run-by {
   margin-top: 2.2rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -2440,6 +2456,7 @@ h5 {
 .header .header-nav .btn {
   padding: 0.575rem 1.1625rem;
   margin-left: 2.9rem;
+  letter-spacing: 0;
 }
 @media (max-width: 1199px) {
   .header .header-nav .btn {
@@ -2496,7 +2513,7 @@ h5 {
   font-weight: 500;
   line-height: 1.375rem;
   text-transform: uppercase;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   letter-spacing: -0.3px;
   margin-left: 3.3rem;
   position: relative;
@@ -3152,7 +3169,6 @@ h5 {
 .modal form .btn--yellow {
   margin-top: 1.2rem;
   padding: 0.575rem 1.3rem;
-  letter-spacing: 0.5px;
   margin-bottom: 1.8rem;
 }
 @media (max-width: 991px) {
@@ -3175,7 +3191,7 @@ h5 {
   color: #fff;
   font-size: 2.8125rem;
   line-height: 3.4375rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-weight: 700;
   padding: 1.8rem 2rem;
 }
@@ -3229,7 +3245,7 @@ h5 {
 }
 .components-box--typography .font-heading {
   font-weight: 700;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
 }
 .components-box--typography .left-col {
   flex: 0 0 55%;
@@ -3249,13 +3265,13 @@ h5 {
   line-height: 1rem;
   text-transform: uppercase;
   margin-bottom: 2.2rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-weight: 700;
 }
 .components-box--typography .button-text {
   font-size: 1rem;
   margin-bottom: 2.2rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   font-weight: 700;
 }
 .components-box--typography .body-text {
@@ -3841,6 +3857,12 @@ h5 {
   overflow: hidden;
   z-index: 1;
 }
+@media (max-width: 991px) {
+  .block-text {
+    padding-top: 1.4rem;
+    padding-bottom: 2.8rem;
+  }
+}
 .block-text::before {
   content: "";
   background-image: url(../img/icon-curl-pink.png);
@@ -3854,6 +3876,23 @@ h5 {
   opacity: 0.1;
   z-index: -1;
 }
+@media (max-width: 991px) {
+  .block-text::before {
+    width: 20.3125rem;
+    height: 20.3125rem;
+    top: auto;
+    bottom: -4rem;
+    right: -3.7rem;
+  }
+}
+.block-text h2 {
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .block-text h2 {
+    margin-bottom: 1.7rem;
+  }
+}
 @media (min-width: 1200px) {
   .block-text .container {
     max-width: 76.3rem;
@@ -3862,14 +3901,18 @@ h5 {
 .block-text ul li {
   font-size: 1.5625rem;
   line-height: 2.1875rem;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-family: "Filson Soft", sans-serif;
+  font-weight: 500;
   padding-left: 2.4rem;
+  letter-spacing: 0;
 }
 @media (max-width: 991px) {
   .block-text ul li {
     font-size: 1rem;
-    line-height: 1.3125rem;
+    line-height: 1.375rem;
+    padding-left: 1.6rem;
+    margin-bottom: 0rem;
+    padding-right: 3rem;
   }
 }
 .block-text ul li::before {
@@ -3885,6 +3928,15 @@ h5 {
   vertical-align: 0.35rem;
   margin-left: -1.5rem;
   margin-right: 1rem;
+}
+@media (max-width: 991px) {
+  .block-text ul li::before {
+    width: 0.25rem;
+    height: 0.25rem;
+    vertical-align: 0.15rem;
+    margin-left: -0.9rem;
+    margin-right: 0.5rem;
+  }
 }
 .block-text .col {
   padding: 0 0.5625rem;
@@ -3905,11 +3957,16 @@ h5 {
   margin-right: -0.5625rem;
 }
 .block-text p {
-  font-size: 1.5625rem;
-  line-height: 2.1875rem;
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
-  margin-bottom: 2.1rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 2.7rem;
+}
+@media (max-width: 991px) {
+  .block-text p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.2rem;
+  }
 }
 .block-text h3 {
   margin-bottom: 0.7rem;
@@ -3924,6 +3981,12 @@ h5 {
   padding-top: 4.8rem;
   padding-bottom: 4.9rem;
 }
+@media (max-width: 991px) {
+  .block-text--links {
+    padding-top: 0.75rem;
+    padding-bottom: 0.4rem;
+  }
+}
 .block-text--links::before {
   background-image: url(../img/icon-squiggle-mauve.png);
   width: 29.375rem;
@@ -3932,8 +3995,28 @@ h5 {
   bottom: -5.9rem;
   right: -14.6rem;
 }
+@media (max-width: 991px) {
+  .block-text--links::before {
+    width: 31.5rem;
+    height: 38rem;
+    bottom: auto;
+    top: -6.1rem;
+    background-size: cover;
+    right: -2.3rem;
+  }
+}
 .block-text--links .row {
   margin-right: 0.5rem;
+}
+@media (max-width: 991px) {
+  .block-text--links .row {
+    margin: 0 -0.6rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-text--links .container {
+    padding: 0 1.7rem;
+  }
 }
 .block-text--links ul {
   display: -ms-flexbox;
@@ -3947,12 +4030,16 @@ h5 {
 @media (max-width: 991px) {
   .block-text--links ul {
     height: auto;
-    margin-bottom: 2.9rem;
   }
 }
 .block-text--links ul li {
   padding-left: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 991px) {
+  .block-text--links ul li {
+    padding-right: 0;
+  }
 }
 .block-text--links ul li::before {
   display: none;
@@ -3964,7 +4051,7 @@ h5 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0;
-  padding-right: 4rem;
+  padding-right: 2.6rem;
   position: relative;
   min-height: 5.3rem;
   position: relative;
@@ -3972,10 +4059,10 @@ h5 {
 }
 @media (max-width: 991px) {
   .block-text--links ul a {
-    min-height: 3.875rem;
+    min-height: 3.625rem;
     padding-right: 2rem;
-    padding-top: 0.78125rem;
-    padding-bottom: 0.53125rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
 }
 .block-text--links ul a::after {
@@ -3997,6 +4084,11 @@ h5 {
   .block-text--links ul a::after {
     width: 0.375rem;
     height: 0.6875rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-text--links h2 {
+    margin-bottom: 1.2rem;
   }
 }
 .block-text--purple {
@@ -4021,6 +4113,11 @@ h5 {
 }
 .block-text--purple ul {
   justify-content: stretch;
+}
+@media (max-width: 991px) {
+  .block-text--purple ul {
+    margin-bottom: 2.9rem;
+  }
 }
 .block-text--purple ul li {
   flex: 1;
@@ -4135,7 +4232,7 @@ h5 {
   }
 }
 .block-image-content .btn {
-  padding: 0.575rem 3.05rem;
+  padding: 0.575rem 2.9rem;
   margin-top: 1rem;
   margin-bottom: 1.1rem;
 }
@@ -4378,7 +4475,7 @@ h5 {
   font-size: 1.25rem;
   line-height: 1.5rem;
   letter-spacing: 0.5px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Filson Soft", sans-serif;
   margin-bottom: 1.5rem;
 }
 @media (max-width: 991px) {
@@ -4540,7 +4637,6 @@ h5 {
   }
 }
 .block-about h3 {
-  padding-right: 3rem;
   margin-bottom: 2.2rem;
 }
 @media (max-width: 1439px) {
@@ -4663,7 +4759,7 @@ h5 {
 
 .block-founders {
   padding-top: 3.6rem;
-  padding-bottom: 4.6rem;
+  padding-bottom: 4.1rem;
 }
 @media (max-width: 991px) {
   .block-founders {
@@ -4781,10 +4877,11 @@ h5 {
   align-items: stretch;
 }
 .block-postcode-search .now-booking {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding-top: 2.6rem;
+  padding-bottom: 0.9rem;
   position: relative;
   margin-bottom: 1.9rem;
+  margin-top: 2.2rem;
 }
 @media (max-width: 991px) {
   .block-postcode-search .now-booking {
@@ -5232,6 +5329,9 @@ h5 {
     margin-bottom: 1.2rem;
   }
 }
+.block-category .col--left > h3 b {
+  font-weight: 500;
+}
 @media (max-width: 991px) {
   .block-category .col--left > h3 b {
     display: block;
@@ -5281,6 +5381,71 @@ h5 {
 @media (max-width: 991px) {
   .block-category .banner--activities-list:last-child {
     margin-bottom: 0;
+  }
+}
+
+.block-content {
+  padding-top: 4.2rem;
+  padding-bottom: 3.7rem;
+}
+@media (max-width: 991px) {
+  .block-content {
+    padding-top: 1.8rem;
+    padding-bottom: 0.4rem;
+  }
+}
+.block-content .col {
+  flex: 0 0 69.8%;
+  max-width: 69.8%;
+}
+@media (max-width: 991px) {
+  .block-content .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.block-content h1 {
+  color: #64358C;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+}
+@media (max-width: 991px) {
+  .block-content h1 {
+    margin-bottom: 1.4rem;
+  }
+}
+.block-content h3 {
+  margin-bottom: 1rem;
+}
+@media (max-width: 991px) {
+  .block-content h3 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.3rem;
+  }
+}
+.block-content p {
+  margin-bottom: 1.4rem;
+}
+.block-content--mental {
+  padding-top: 3.15rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 991px) {
+  .block-content--mental {
+    padding-top: 2.3rem;
+    padding-bottom: 2rem;
+  }
+}
+.block-content--mental .col {
+  flex: 0 0 70.5%;
+  max-width: 70.5%;
+}
+@media (max-width: 991px) {
+  .block-content--mental .col {
+    flex: 0 0 93%;
+    max-width: 93%;
+    padding-right: 1.3rem;
   }
 }
 

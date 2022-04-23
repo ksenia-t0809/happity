@@ -73,10 +73,11 @@
         }
     }
     .now-booking {
-        padding-top: 3rem;
-        padding-bottom: 1rem;
+        padding-top: 2.6rem;
+        padding-bottom: 0.9rem;
         position: relative;
         margin-bottom: 1.9rem;
+        margin-top: 2.2rem;
         @include respond-to(sm){
             margin-top: 2.5rem;
             padding-top: 1.3rem;

@@ -16,6 +16,7 @@
         @include border-radius(0.125rem);
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        font-weight: 400;
         &::placeholder{
             color: $grey;
         }

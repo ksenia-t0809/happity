@@ -22,6 +22,7 @@
                     margin-bottom: 1.2rem;
                 }
                 b{
+                    font-weight: 500;
                     @include respond-to(sm){
                         display: block;
                     }
