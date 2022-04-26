@@ -3848,6 +3848,9 @@ h5 {
     align-items: center;
   }
 }
+.block-logos--white {
+  background-color: #fff;
+}
 
 .block-text {
   background-color: #FFEAF3;
@@ -4455,6 +4458,56 @@ h5 {
     display: block;
     height: 2.1rem;
     padding: 0.35rem 2.2rem;
+  }
+}
+.block-banner--jobs {
+  background-color: #FFEAF3;
+  padding-top: 3.5rem;
+  padding-bottom: 6.4rem;
+}
+@media (max-width: 991px) {
+  .block-banner--jobs {
+    padding-top: 0.8rem;
+    padding-bottom: 6.2rem;
+  }
+}
+.block-banner--jobs::after {
+  content: "";
+  background-image: url(../img/icon-curl-pink.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  right: -7rem;
+  bottom: -2.6rem;
+  opacity: 0.1;
+  width: 37.5625rem;
+  height: 28.0625rem;
+}
+@media (max-width: 991px) {
+  .block-banner--jobs::after {
+    right: -3.6rem;
+    bottom: -3.5rem;
+    width: 20.3125rem;
+    height: 16.9375rem;
+    z-index: -1;
+  }
+}
+.block-banner--jobs h2 {
+  margin-bottom: 0.8rem;
+}
+@media (max-width: 991px) {
+  .block-banner--jobs h2 {
+    margin-bottom: 1rem;
+  }
+}
+.block-banner--jobs .col {
+  flex: 0 0 70.8%;
+  max-width: 70.8%;
+}
+@media (max-width: 991px) {
+  .block-banner--jobs .col {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
