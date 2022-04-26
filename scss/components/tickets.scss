@@ -1,0 +1,102 @@
+// ----- TICKETS ----- //
+.tickets{
+    background-color: $mauve_tint;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.05);
+    padding: 2.1rem 3.8rem;
+    @include respond-to(lg){
+        padding: 2.1rem 1.9rem;
+    }
+    @include respond-to(sm){
+        padding: 0.8rem 0.9rem 1.3rem 1.2rem;
+    }
+    p{
+        margin-bottom: 0.3rem;
+        @include respond-to(sm){
+            margin-bottom: 1.2rem;
+        }
+    }
+    .tickets-item{
+        @include flex;
+        align-items: flex-start;
+        border-bottom: 1px solid rgb(151 151 151 / 50%);
+        min-height: 4.7rem;
+        padding: 1.125rem 0 0.75rem;
+        @include respond-to(sm){
+            padding-bottom: 0.9rem;
+            padding-top: 1rem;
+            margin-bottom: 0;
+            position: relative;
+            min-height: 6.3rem;
+        }
+        p{
+            margin-bottom: 0.3rem;
+            margin-top: 0rem;
+            @include respond-to(sm){
+                padding-right: 5rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0rem;
+            }
+        }
+        .price{
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-top: 0.7rem;
+            @include respond-to(sm){
+                margin-top: 0;
+                margin-left: auto;
+                align-self: flex-start;
+            }
+        }
+        > div:first-child{
+            flex: 0 0 55.8%;
+            max-width: 55.8%;
+            @include respond-to(sm){
+                flex: 0 0 79.2%;
+                max-width: 79.2%;
+            }
+        }
+    }
+    .item-title{
+        font-family: $font-family-heading;
+        font-size: 1rem;
+        line-height: 1.375rem;
+        font-weight: 500;
+        margin-top: 0.6rem;
+        @include respond-to(sm){
+            margin-top: 0;
+            max-width: 11rem;
+        }
+        .icon{
+            margin-left: 0.2rem;
+            display: inline-block;
+            vertical-align: -0.05rem;
+        }
+    }
+    .formfield--select {
+        flex: 0 0 4.25rem;
+        max-width: 4.25rem;
+        margin-left: auto;
+        padding: 0.5rem 0.7rem;
+        background-position-x: 82%;
+        @include respond-to(sm){
+            margin-top: 0.4rem;
+            max-width: 3.6875rem;
+            flex: 0 0 3.6875rem;
+            background-position-x: 76%;
+            position: absolute;
+            right: 0;
+            top: 2.4rem;
+        }
+    }
+    .tag{
+        margin-top: 0.65rem;
+    }
+    .btn{
+        margin-top: 1.5rem;
+        @include respond-to(sm){
+            margin-top: 1.2rem;
+        }
+    }
+}
+// ----- /TICKETS ----- //
+// 

@@ -1,0 +1,130 @@
+// ----- BLOCK CHECKOUT ----- //
+.block-checkout{
+    padding-top: 2.2rem;
+    padding-bottom: 14.4rem;
+    @include respond-to(sm){
+        padding-top: 0;
+        padding-bottom: 3.8rem;
+    }
+    .container{
+        @include respond-to(sm){
+            padding: 0 1rem;
+        }
+    }
+    .row{
+        @include respond-to(sm){
+            margin: 0 -1rem;
+        }
+    }
+    .col{
+        &--left{
+            flex: 0 0 66.7%;
+            max-width: 66.7%;
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+        &--right{
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .card{
+        &--expanded{
+            margin-bottom: 0.6rem;
+            .card-image{
+                max-height: 23.25rem;
+                margin-bottom: -0.4rem;
+            }
+            .card-head{
+                padding-bottom: 0.1rem;  
+                @include respond-to(sm){
+                    padding-bottom: 1.4rem;
+                }              
+            }
+            .card-body{
+                padding: 0.9rem 0.1rem 0;
+                @include respond-to(sm){
+                    padding: 0.7rem 1.6rem 0;
+                }
+            }
+            .card-info{
+                flex: 0 0 18.1rem;
+                max-width: 18.1rem;
+                @include respond-to(sm){
+                    margin-bottom: 1.8rem;
+                }
+                li{
+                    text-transform: uppercase;
+                    font-size: 0.875rem;
+                    font-family: $font-family-heading;
+                    letter-spacing: 0.5px;
+                    line-height: 1rem;
+                    margin-bottom: 0.5rem;
+                    img{
+                        margin-top: 0.05rem;
+                        max-width: 0.625rem;
+                        max-height: 0.625rem;
+                        flex: 0 0 0.625rem;
+                        @include respond-to(sm){
+                            position: static;
+                        }
+                    }
+                }
+            }
+            .card-title{
+                @include respond-to(sm){
+                    margin-top: 1.7rem;
+                }
+                br{
+                    @include respond-to(sm){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .card-info-wrap{
+        @include flex;
+        width: 100%;
+        > div{
+            flex: 1;
+        }
+    }
+    .tickets{
+        @include respond-to(sm){
+            margin: 2.2rem 1rem 1.6rem;
+        }
+    }
+    .map{
+        @include respond-to(sm){
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
+        }
+    }
+    .card--facebook-two {
+        @include respond-to(sm){
+            margin: 1.5rem -0.7rem 1rem;
+            padding-bottom: 1.2rem;
+        }
+    }
+    .card--list{
+        @include respond-to(sm){
+            margin: 0 -0.8rem;
+            padding: 1.3rem 1.2rem 0.5rem;
+        }
+        li{
+            @include respond-to(sm){
+                margin-bottom: 0.7rem;
+            }
+        }
+    }
+}
+// ----- /BLOCK CHECKOUT ----- //
+// 

@@ -645,7 +645,8 @@ h5 {
   color: #363A3C;
   font-size: 1rem;
   text-align: center;
-  padding: 0.25rem 0.84rem;
+  display: inline-block;
+  padding: 0.15rem 0.8rem;
 }
 .tag--small {
   font-size: 0.8125rem;
@@ -1243,8 +1244,8 @@ h5 {
   background-image: url(../img/icon-arrow-pink.svg);
   background-repeat: no-repeat;
   margin-left: auto;
-  width: 0.4rem;
-  height: 0.6rem;
+  width: 0.5rem;
+  height: 0.7rem;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -1970,6 +1971,13 @@ h5 {
   .card--expanded-map .card-item .card--date-cols:last-child {
     margin-bottom: 0;
   }
+}
+.card--facebook-two {
+  padding: 0rem 0.7rem 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.card--facebook-two > img {
+  width: 100%;
 }
 
 .sidebar {
@@ -2768,6 +2776,8 @@ h5 {
   text-transform: none;
   letter-spacing: 0;
   height: auto;
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
 }
 .address p {
   margin-bottom: -0.2rem;
@@ -3184,6 +3194,129 @@ h5 {
   letter-spacing: 0;
   text-transform: none;
   margin-left: 0.2rem;
+}
+
+.tickets {
+  background-color: #F2EDF7;
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.05);
+  padding: 2.1rem 3.8rem;
+}
+@media (max-width: 1199px) {
+  .tickets {
+    padding: 2.1rem 1.9rem;
+  }
+}
+@media (max-width: 991px) {
+  .tickets {
+    padding: 0.8rem 0.9rem 1.3rem 1.2rem;
+  }
+}
+.tickets p {
+  margin-bottom: 0.3rem;
+}
+@media (max-width: 991px) {
+  .tickets p {
+    margin-bottom: 1.2rem;
+  }
+}
+.tickets .tickets-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  min-height: 4.7rem;
+  padding: 1.125rem 0 0.75rem;
+}
+@media (max-width: 991px) {
+  .tickets .tickets-item {
+    padding-bottom: 0.9rem;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    position: relative;
+    min-height: 6.3rem;
+  }
+}
+.tickets .tickets-item p {
+  margin-bottom: 0.3rem;
+  margin-top: 0rem;
+}
+@media (max-width: 991px) {
+  .tickets .tickets-item p {
+    padding-right: 5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+  }
+}
+.tickets .tickets-item .price {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-top: 0.7rem;
+}
+@media (max-width: 991px) {
+  .tickets .tickets-item .price {
+    margin-top: 0;
+    margin-left: auto;
+    align-self: flex-start;
+  }
+}
+.tickets .tickets-item > div:first-child {
+  flex: 0 0 55.8%;
+  max-width: 55.8%;
+}
+@media (max-width: 991px) {
+  .tickets .tickets-item > div:first-child {
+    flex: 0 0 79.2%;
+    max-width: 79.2%;
+  }
+}
+.tickets .item-title {
+  font-family: "Filson Soft", sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  margin-top: 0.6rem;
+}
+@media (max-width: 991px) {
+  .tickets .item-title {
+    margin-top: 0;
+    max-width: 11rem;
+  }
+}
+.tickets .item-title .icon {
+  margin-left: 0.2rem;
+  display: inline-block;
+  vertical-align: -0.05rem;
+}
+.tickets .formfield--select {
+  flex: 0 0 4.25rem;
+  max-width: 4.25rem;
+  margin-left: auto;
+  padding: 0.5rem 0.7rem;
+  background-position-x: 82%;
+}
+@media (max-width: 991px) {
+  .tickets .formfield--select {
+    margin-top: 0.4rem;
+    max-width: 3.6875rem;
+    flex: 0 0 3.6875rem;
+    background-position-x: 76%;
+    position: absolute;
+    right: 0;
+    top: 2.4rem;
+  }
+}
+.tickets .tag {
+  margin-top: 0.65rem;
+}
+.tickets .btn {
+  margin-top: 1.5rem;
+}
+@media (max-width: 991px) {
+  .tickets .btn {
+    margin-top: 1.2rem;
+  }
 }
 
 .components-box .components-title {
@@ -5499,6 +5632,147 @@ h5 {
     flex: 0 0 93%;
     max-width: 93%;
     padding-right: 1.3rem;
+  }
+}
+
+.block-checkout {
+  padding-top: 2.2rem;
+  padding-bottom: 14.4rem;
+}
+@media (max-width: 991px) {
+  .block-checkout {
+    padding-top: 0;
+    padding-bottom: 3.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .container {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .row {
+    margin: 0 -1rem;
+  }
+}
+.block-checkout .col--left {
+  flex: 0 0 66.7%;
+  max-width: 66.7%;
+}
+@media (max-width: 991px) {
+  .block-checkout .col--left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.block-checkout .col--right {
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+}
+@media (max-width: 991px) {
+  .block-checkout .col--right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.block-checkout .card--expanded {
+  margin-bottom: 0.6rem;
+}
+.block-checkout .card--expanded .card-image {
+  max-height: 23.25rem;
+  margin-bottom: -0.4rem;
+}
+.block-checkout .card--expanded .card-head {
+  padding-bottom: 0.1rem;
+}
+@media (max-width: 991px) {
+  .block-checkout .card--expanded .card-head {
+    padding-bottom: 1.4rem;
+  }
+}
+.block-checkout .card--expanded .card-body {
+  padding: 0.9rem 0.1rem 0;
+}
+@media (max-width: 991px) {
+  .block-checkout .card--expanded .card-body {
+    padding: 0.7rem 1.6rem 0;
+  }
+}
+.block-checkout .card--expanded .card-info {
+  flex: 0 0 18.1rem;
+  max-width: 18.1rem;
+}
+@media (max-width: 991px) {
+  .block-checkout .card--expanded .card-info {
+    margin-bottom: 1.8rem;
+  }
+}
+.block-checkout .card--expanded .card-info li {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "Filson Soft", sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+}
+.block-checkout .card--expanded .card-info li img {
+  margin-top: 0.05rem;
+  max-width: 0.625rem;
+  max-height: 0.625rem;
+  flex: 0 0 0.625rem;
+}
+@media (max-width: 991px) {
+  .block-checkout .card--expanded .card-info li img {
+    position: static;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .card--expanded .card-title {
+    margin-top: 1.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .card--expanded .card-title br {
+    display: none;
+  }
+}
+.block-checkout .card-info-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.block-checkout .card-info-wrap > div {
+  flex: 1;
+}
+@media (max-width: 991px) {
+  .block-checkout .tickets {
+    margin: 2.2rem 1rem 1.6rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .map {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .card--facebook-two {
+    margin: 1.5rem -0.7rem 1rem;
+    padding-bottom: 1.2rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .card--list {
+    margin: 0 -0.8rem;
+    padding: 1.3rem 1.2rem 0.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout .card--list li {
+    margin-bottom: 0.7rem;
   }
 }
 

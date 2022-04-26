@@ -365,8 +365,8 @@
                     background-image: url(../img/icon-arrow-pink.svg);
                     background-repeat: no-repeat;
                     margin-left: auto;
-                    width: 0.4rem;
-                    height: 0.6rem;
+                    width: 0.5rem;
+                    height: 0.7rem;
                     background-size: contain;
                     position: absolute;
                     top: 0;
@@ -997,6 +997,13 @@
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+    &--facebook-two{
+        padding: 0rem 0.7rem 0.9rem;
+        margin-bottom: 1.5rem;
+        > img{
+            width: 100%;
         }
     }
 }
