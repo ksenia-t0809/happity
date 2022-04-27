@@ -137,5 +137,12 @@
         }
     }
 }
+.link{
+    font-family: $font-family-base;
+    &--underline{
+        color: $purple;
+        text-decoration: underline;
+    }
+}
 // ----- /BUTTONS ----- //
 // 

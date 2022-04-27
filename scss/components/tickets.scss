@@ -55,6 +55,24 @@
                 max-width: 79.2%;
             }
         }
+        &--total{
+            justify-content: flex-end;
+            min-height: 1rem;
+            padding-bottom: 1.2rem;
+            .price{
+                margin-left: 2.3rem;
+                margin-top: 0;
+            }
+            > div:first-child{
+                flex: 0 0 auto;
+                max-width: 100%;
+            }
+            .item-title{
+                margin-top: 0;
+                font-family: $font-family-base;
+                font-weight: 700;
+            }
+        }
     }
     .item-title{
         font-family: $font-family-heading;
@@ -95,6 +113,64 @@
         margin-top: 1.5rem;
         @include respond-to(sm){
             margin-top: 1.2rem;
+        }
+    }
+    .tickets-content{
+        padding-top: 0.2rem;
+        max-width: 44.75rem;
+        .tickets-item{
+            > div:first-child{
+                flex: 0 0 10.5rem;
+                max-width: 10.5rem;
+                @include respond-to(sm){
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+            .formfield--select {
+                margin-left: 0.3rem;
+                flex: 0 0 3.6rem;
+                max-width: 3.6rem;
+                padding: 0.5rem 0.5rem;
+                background-position-x: 74%;
+                @include respond-to(sm){
+                    position: static;
+                    margin-left: 0.2rem;
+                }
+            }
+            .price{
+                margin-left: auto;
+                @include respond-to(sm){
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            &--total{
+                @include respond-to(sm){
+                    padding-top: 1.7rem;
+                }
+                > div:first-child{
+                    flex: 0 0 auto;
+                    max-width: 100%;
+                }
+                .price{
+                    margin-left: 2.3rem;
+                    margin-top: 0;
+                    @include respond-to(sm){
+                        position: static;
+                    }
+                }
+                .item-title{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .sign-in-form {
+        margin-top: 4.6rem;
+        margin-bottom: 1.2rem;
+        @include respond-to(sm){
+            margin-top: 1.7rem;
         }
     }
 }
