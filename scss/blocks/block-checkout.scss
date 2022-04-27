@@ -206,6 +206,43 @@
             }
         }
     }
+    &--two{
+        padding-bottom: 6.1rem;
+        @include respond-to(sm){
+            padding-bottom: 2.4rem;
+        }
+        .card{
+            &--expanded{
+                margin-bottom: 1.3rem;
+                @include respond-to(sm){
+                    margin-bottom: 1rem;
+                }
+                .card-head{
+                    border: 0;
+                    padding: 0 0.3rem;
+                    @include respond-to(sm){
+                        padding: 0;
+                    }
+                }
+                .card-title{
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+        .tickets{
+            @include respond-to(sm){
+                margin-top: 1.2rem;
+                padding: 1.1rem 1rem 1rem 1.2rem;
+            }
+            &--details{
+                @include respond-to(sm){
+                    padding-top: 1.8rem;
+                    padding-left: 1.1rem;
+                }
+            }
+        }
+    }
 }
 // ----- /BLOCK CHECKOUT ----- //
 // 

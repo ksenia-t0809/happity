@@ -116,6 +116,19 @@
         .form-check-label{
             cursor: pointer;
         }
+        a{
+            color: $purple;
+            text-decoration: underline;
+        }
+    }
+    &--textarea{
+        height: 9.4375rem;
+        @include respond-to(sm){
+            height: 10.5375rem;
+        }
+        .formfield-input{
+            padding-top: 0.5rem;
+        }
     }
 }
 // ----- /FORMFIELD ----- //

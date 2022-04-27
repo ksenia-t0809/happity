@@ -47,11 +47,11 @@
                 </a>
             </header>
             <main class="main-content">
-                <section class="block-checkout block-checkout--steps">
+                <section class="block-checkout block-checkout--steps block-checkout--two">
                     <div class="container">
                         <ul class="checkout-steps">
-                            <li class="current"><a href="#">Review</a></li>
-                            <li><a href="#">Details</a></li>
+                            <li class="done"><a href="#">Review</a></li>
+                            <li class="current"><a href="#">Details</a></li>
                             <li><a href="#">Payment</a></li>
                         </ul>
                         <div class="card card--expanded">
@@ -77,67 +77,56 @@
                                     <img src="img/card-img-1.png" alt="card-img-1">
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="card-content">
-                                    <img src="img/logo-stripe.svg" alt="logo-stripe">
-                                    <div>
-                                        <p>Movers and Shakers use Hppity as a booking system. Card payments are processed securely via Stripe and go directly to Movers and Shakers.</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="tickets">
-                            <div class="tickets-content">
-                                <div class="tickets-item">
-                                    <div>
-                                        <div class="item-title">
-                                            Single session
-                                            <span class="icon">
-                                                <img src="img/icon-info.svg" alt="icon-info">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <select class="formfield formfield--select">
-                                        <option value="0" selected>1</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                    <div class="price">
-                                        £7.00
-                                    </div>
+                        <div class="tickets tickets--text">
+                            <h5>1 X Single Session @ £7.00</h5>
+                                <p>Admits 1 Parent, 1 Child (Siblings under 6 months are free and do not require a ticket.) 
+                                Refunds only given if we are notified by 8.30am on the day of the class.</p>
+                            <p><b>Total</b> £7.00</p>
+                        </div>
+                        <div class="tickets tickets--details">
+                            <h4>Add your details</h4>
+                            <p>Your booking is held directly with Movers and Shakers.</p>
+                            <form action="#">
+                                <h5>Your details</h5>
+                                <div class="formfield">
+                                    <input type="text" name="first-name" id="first-name-input" placeholder="First name" class="formfield-input">
                                 </div>
-                                <div class="tickets-item tickets-item--total">
-                                    <div class="item-title">
-                                        Total
-                                    </div>
-                                    <div class="price">
-                                        £7.00
-                                    </div>
+                                <div class="formfield">
+                                    <input type="text" name="last-name" id="last-name-input" placeholder="Last name" class="formfield-input">
                                 </div>
-                                <div class="sign-in-form">
-                                    <h3>SECURE CHECKOUT</h3>
-                                    <div class="col col--left">
-                                        <h5>Sign in for lightening fast checkout</h5>
-                                        <form action="#">
-                                            <div class="formfield">
-                                                <input type="email" class="formfield-input" name="" id="" placeholder="Email">
-                                            </div>
-                                            <div class="formfield">
-                                                <input type="password" class="formfield-input" name="" id="" placeholder="Password ">
-                                            </div>
-                                            <a href="#" class="link link--underline">Forgot your password?</a>
-                                            <button type="submit" class="btn btn--yellow">Sign in</button>
-                                        </form>
-                                    </div>
-                                    <div class="col col--right">
-                                        <h5>New to the site?</h5>
-                                        <a href="#" class="btn btn--yellow">GUEST CHECKOUT</a>
-                                        <p>Set a password after checkout to create an account.</p>
-                                    </div>
+                                <div class="formfield">
+                                    <input type="email" name="email" id="email-input" placeholder="Email" class="formfield-input">
                                 </div>
-                            </div>
+                                <div class="formfield">
+                                    <input type="tel" name="contact-number" id="contact-number-input" placeholder="Contact number" class="formfield-input">
+                                </div>  
+                                <h5>Ticket 1 – Child details</h5>
+                                <div class="formfield">
+                                    <input type="text" name="name" id="name-input" placeholder="Name" class="formfield-input">
+                                </div>
+                                <div class="formfield">
+                                    <input type="text" name="date" id="date-input" placeholder="Date of birth (dd/mm/yyy)" class="formfield-input">
+                                </div>
+                                <p>Anything else we should know? (known allergies, medical conditions)</p>
+                                <div class="formfield formfield--textarea">
+                                    <textarea class="formfield-input"></textarea>
+                                </div>
+                                <div class="formfield--form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkbox-1" value="option1">
+                                    <label class="form-check-label" for="checkbox-1">I agree to <a href="#">Movers and Shakers terms and conditions</a> (required)</label>
+                                </div>
+                                <p>If you would like to receive communications from us in future, please tick below. You are free to opt-out at any time.</p>
+                                <div class="formfield--form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkbox-2" value="option1">
+                                    <label class="form-check-label" for="checkbox-2">I would like to hear from Movers and Shakers in future. <a href="#">Makers and Shakers privacy policy</a></label>
+                                </div>
+                                <div class="formfield--form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkbox-3" value="option1">
+                                    <label class="form-check-label" for="checkbox-3">I would like to hear from Happity on other local activites. <a href="#">Happity privacy policy</a></label>
+                                </div>
+                                <button type="submit" class="btn btn--yellow">PROCEED TO CHECKOUT</button>
+                            </form>
                         </div>
                     </div>
                 </section>
