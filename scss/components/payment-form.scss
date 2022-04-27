@@ -1,0 +1,46 @@
+// ----- PAYMENT FORM ----- //
+.payment-form{
+    @include flex;
+    margin: 0 -1.1875rem;
+    @include respond-to(sm){
+        margin: 0 -0.25rem 0.5rem;
+    }
+    .formfield{
+        width: 100%;
+        @include respond-to(sm){
+            margin-bottom: 0.5rem;
+        }
+        .formfield-input{
+            width: 100%;
+            padding-left: 0.6rem;
+        }
+    }
+    .col{
+        padding: 0 1.1875rem;
+        flex: 1 0 0%;
+        @include respond-to(sm){
+            padding: 0 0.25rem;
+        }
+        &:first-child{
+            flex: 0 0 61.5%;
+            max-width: 61.5%;
+            @include respond-to(sm){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .btn-col{
+        flex: 0 0 100%;
+    }
+    .btn{
+        margin-top: 2.1rem;
+        padding: 0.575rem 3.4625rem;
+        @include respond-to(sm){
+            margin-top: 0.45rem;
+            padding: 0.575rem 2.8625rem;
+        }
+    }
+}
+// ----- /PAYMENT FORM ----- //
+// 

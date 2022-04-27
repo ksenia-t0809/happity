@@ -3242,6 +3242,45 @@ h5 {
     margin-bottom: 1.2rem;
   }
 }
+.tickets h3 {
+  color: #64358C;
+  margin-bottom: 1.4rem;
+}
+@media (max-width: 991px) {
+  .tickets h3 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+.tickets .tickets-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .tickets .tickets-title {
+    align-items: flex-start;
+    margin-bottom: -0.2rem;
+  }
+}
+.tickets .tickets-title .logo-img {
+  margin-left: auto;
+}
+@media (max-width: 991px) {
+  .tickets .tickets-title .logo-img {
+    margin-right: -0.4rem;
+    margin-top: -0.1rem;
+  }
+}
+@media (max-width: 991px) {
+  .tickets .tickets-title > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 .tickets .tickets-item {
   display: -ms-flexbox;
   display: flex;
@@ -3548,6 +3587,25 @@ h5 {
     margin-bottom: 1rem;
   }
 }
+.tickets--payment {
+  padding-top: 2.7rem;
+  padding-right: 6rem;
+  padding-bottom: 3.1rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 991px) {
+  .tickets--payment {
+    margin-bottom: 2.9rem;
+  }
+}
+.tickets--payment h3 {
+  margin-bottom: 0.7rem;
+}
+@media (max-width: 991px) {
+  .tickets--payment h3 {
+    margin-bottom: 0.4rem;
+  }
+}
 
 .checkout-steps {
   display: -ms-flexbox;
@@ -3756,6 +3814,63 @@ h5 {
 @media (max-width: 991px) {
   .sign-in-form form .btn {
     margin-top: 1.3rem;
+  }
+}
+
+.payment-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -1.1875rem;
+}
+@media (max-width: 991px) {
+  .payment-form {
+    margin: 0 -0.25rem 0.5rem;
+  }
+}
+.payment-form .formfield {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .payment-form .formfield {
+    margin-bottom: 0.5rem;
+  }
+}
+.payment-form .formfield .formfield-input {
+  width: 100%;
+  padding-left: 0.6rem;
+}
+.payment-form .col {
+  padding: 0 1.1875rem;
+  flex: 1 0 0%;
+}
+@media (max-width: 991px) {
+  .payment-form .col {
+    padding: 0 0.25rem;
+  }
+}
+.payment-form .col:first-child {
+  flex: 0 0 61.5%;
+  max-width: 61.5%;
+}
+@media (max-width: 991px) {
+  .payment-form .col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.payment-form .btn-col {
+  flex: 0 0 100%;
+}
+.payment-form .btn {
+  margin-top: 2.1rem;
+  padding: 0.575rem 3.4625rem;
+}
+@media (max-width: 991px) {
+  .payment-form .btn {
+    margin-top: 0.45rem;
+    padding: 0.575rem 2.8625rem;
   }
 }
 
@@ -6352,6 +6467,11 @@ h5 {
   .block-checkout--two .tickets--details {
     padding-top: 1.8rem;
     padding-left: 1.1rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-checkout--two .tickets--payment {
+    margin-bottom: 2.9rem;
   }
 }
 

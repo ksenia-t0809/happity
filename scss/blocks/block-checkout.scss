@@ -241,6 +241,11 @@
                     padding-left: 1.1rem;
                 }
             }
+            &--payment{
+                @include respond-to(sm){
+                    margin-bottom: 2.9rem;
+                }
+            }
         }
     }
 }

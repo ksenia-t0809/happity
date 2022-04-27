@@ -15,6 +15,36 @@
             margin-bottom: 1.2rem;
         }
     }
+    h3{
+        color: $purple;
+        margin-bottom: 1.4rem;
+        @include respond-to(sm){
+            font-size: 1rem;
+            line-height: 1.375rem;
+        }
+    }
+    .tickets-title{
+        @include flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        @include respond-to(sm){
+            align-items: flex-start;
+            margin-bottom: -0.2rem;
+        }
+        .logo-img{
+            margin-left: auto;
+            @include respond-to(sm){
+                margin-right: -0.4rem;
+                margin-top: -0.1rem;
+            }
+        }
+        > div{
+            @include respond-to(sm){
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
     .tickets-item{
         @include flex;
         align-items: flex-start;
@@ -177,6 +207,7 @@
         padding-top: 2.625rem;
         padding-bottom: 2.6rem;
         margin-bottom: 1.7rem;
+        
         h5{
             margin-bottom: 1.2rem;
             font-weight: 500;
@@ -277,6 +308,21 @@
         p{
             @include respond-to(sm){
                 margin-bottom: 1rem;
+            }
+        }
+    }
+    &--payment{
+        padding-top: 2.7rem;
+        padding-right: 6rem;
+        padding-bottom: 3.1rem;
+        margin-bottom: 3rem;
+        @include respond-to(sm){
+            margin-bottom: 2.9rem;
+        }
+        h3{
+            margin-bottom: 0.7rem;
+            @include respond-to(sm){
+                margin-bottom: 0.4rem;
             }
         }
     }
