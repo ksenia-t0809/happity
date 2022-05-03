@@ -6647,4 +6647,63 @@ h5 {
   }
 }
 
+.block-404 {
+  background-color: rgba(100, 53, 140, 0.1);
+  text-align: center;
+  margin-top: 0.7rem;
+  padding-top: 8.4rem;
+  padding-bottom: 27.3rem;
+}
+@media (max-width: 991px) {
+  .block-404 {
+    margin-top: 0rem;
+    padding-top: 3.3rem;
+    padding-bottom: 7.3rem;
+  }
+}
+.block-404 .col {
+  flex: 0 0 37.5rem;
+  max-width: 37.5rem;
+}
+@media (max-width: 991px) {
+  .block-404 .col {
+    flex: 0 0 20rem;
+    max-width: 20rem;
+  }
+}
+.block-404 .icon-cloud {
+  max-width: 8.25rem;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .block-404 .icon-cloud {
+    margin-bottom: 1.2rem;
+  }
+}
+.block-404 h1 {
+  color: #64358C;
+  font-size: 1.5625rem;
+  line-height: 2.1875rem;
+  text-transform: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+@media (max-width: 991px) {
+  .block-404 h1 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-404 p {
+    line-height: 1.375rem;
+  }
+}
+.block-404 p a {
+  text-decoration: underline;
+  color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
