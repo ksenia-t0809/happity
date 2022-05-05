@@ -4,6 +4,7 @@
     padding-bottom: 1.7rem;
     @include respond-to(sm){
         padding-top: 1.5rem;
+        padding-bottom: 0.9rem;
     }
     .container{
         @media(min-width: 1200px){

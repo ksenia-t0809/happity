@@ -29,8 +29,10 @@ $(document).ready(function(){
 
     // Modal
     $('.btn-modal').on('click', function(e){
-        $('.modal').addClass('show');
-        $('body').addClass('overflow');
+        // $('.modal').addClass('show');
+        // $('body').addClass('overflow');
+        var id = $(this).data('id');
+        $('.modal[data-id="modal' + id + '"]').addClass('show');
         e.preventDefault();
     });
 

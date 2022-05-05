@@ -94,8 +94,11 @@
     }
 }
 .block-pnd-support{
+    padding-top: 5.3rem;
+    padding-bottom: 5.5rem;
     @include respond-to(sm){
         padding-bottom: 2.9rem;
+        padding-top: 1.8rem;
     }
     .image-wrap {
         @include respond-to(sm){
@@ -103,6 +106,15 @@
         }
         @include respond-to(xs){
             height: 13.4rem;
+        }
+        &::before{
+            background-image: url(../img/icon-speech-bubble-white.png);
+            left: -3.1rem;
+            top: 0.5rem;
+            @include respond-to(sm){
+                top: 0.5rem;
+                left: -1.8rem;
+            }
         }
     }
     h3 {

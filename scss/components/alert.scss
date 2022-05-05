@@ -1,0 +1,33 @@
+// ----- ALERT ----- //
+.alert{
+    background-color: $dark_grey;
+    color: $white;
+    max-width: 21.5rem;
+    @include border-radius(0.25rem);
+    padding: 1rem 3.1rem 1.2rem 1rem;
+    position: relative;
+    p{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.375rem;
+        font-family: $font-family-heading;
+        margin-bottom: 0;
+    }
+    &--error{
+        &::after{
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23CC0000'/%3E%3Cpath d='M8.924 9.156H7.352L7.064 3.432H9.212L8.924 9.156ZM7.064 11.16C7.064 10.792 7.168 10.536 7.376 10.392C7.584 10.24 7.836 10.164 8.132 10.164C8.42 10.164 8.664 10.24 8.864 10.392C9.072 10.536 9.176 10.792 9.176 11.16C9.176 11.512 9.072 11.768 8.864 11.928C8.664 12.08 8.42 12.156 8.132 12.156C7.836 12.156 7.584 12.08 7.376 11.928C7.168 11.768 7.064 11.512 7.064 11.16Z' fill='white'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 1rem;
+            height: 1rem;
+            margin: auto 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0.9375rem;
+        }
+    }
+}
+// ----- /ALERT ----- //
+// 
