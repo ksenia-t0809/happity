@@ -405,6 +405,44 @@
         }
         
     }
+    &--create-account{
+        margin-top: 2.5rem;
+        padding: 2.8rem 3.8rem 3.5rem;
+        @include respond-to(sm){
+            padding: 2rem 1.6rem 3.2rem 1rem;
+        }
+        h3{
+            margin-bottom: 1rem;
+            @include respond-to(sm){
+                font-size: 1.625rem;
+                line-height: 2rem;
+            }
+        }
+        h5{
+            margin-bottom: 1rem;
+            @include respond-to(sm){
+                margin-bottom: 1.2rem;
+            }
+        }
+        form{
+            max-width: 20.4rem;
+            .formfield{
+                margin-bottom: 0.7rem;
+            }
+            .formfield-input{
+                padding-left: 0.6rem;
+            }
+            .btn{
+                margin-top: 1rem;
+                @include respond-to(xs){
+                    width: 100%;
+                }
+                @include respond-to(sm){
+                    margin-top: 0.3rem;
+                }
+            }
+        }
+    }
 }
 // ----- /TICKETS ----- //
 // 

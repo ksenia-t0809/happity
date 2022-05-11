@@ -250,10 +250,10 @@
     }
     &--order{
         padding-top: 3.4rem;
-        padding-bottom: 11.1rem;
+        padding-bottom: 4.7rem;
         @include respond-to(sm){
             padding-top: 1rem;
-            padding-bottom: 4.1rem;
+            padding-bottom: 1rem;
         }
         .top-content{
             margin-bottom: 4.2rem;
@@ -309,6 +309,12 @@
             &--order{
                 @include respond-to(sm){
                     margin-bottom: 0.9rem;
+                }
+            }
+            &--create-account{
+                @include respond-to(sm){
+                    margin-top: 1.3rem;
+                    margin-bottom: 0;
                 }
             }
         }
