@@ -280,6 +280,159 @@
             }
         }
     }
+    &--send-enquiry{
+        .modal-content{
+            padding: 4.9375rem 6.1rem 4rem;
+            @include respond-to(sm){
+                padding: 2.4rem 1.1rem 2.4rem;
+            }
+        }
+        p{
+            @include respond-to(sm){
+                font-size: 1.125rem;
+            }
+        }
+        form{
+            max-width: 41.4rem;
+            margin-bottom: 1.3rem;
+            @include respond-to(sm){
+                margin-top: 1.7rem;
+                margin-bottom: 1.5rem;
+            }
+            .formfield{
+                input, textarea{
+                    padding-left: 1.2rem;
+                    @include respond-to(sm){
+                        padding-left: 0.8rem;
+                    }
+                    &::placeholder{
+                        color: $black;
+                    }
+                }
+                &--textarea{
+                    height: 5.3375rem;
+                    @include respond-to(sm){
+                        height: 6.4375rem;
+                    }
+                    .formfield-input{
+                        padding-top: 0.9rem;
+                    }
+                }
+            }
+            .btn--yellow{
+                margin-top: 1.4rem;
+                width: 15.5rem;
+                margin-bottom: 2.2rem;
+                @include respond-to(sm){
+                    margin-top: 0.6rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+    &--follow{
+        .modal-content{
+            padding-bottom: 7.2rem;
+            @include respond-to(sm){
+                padding-bottom: 2.5rem;
+            }
+        }
+        form{
+            margin-left: -0.4rem;
+            max-width: 43rem;
+            margin-bottom: 0;
+            @include respond-to(sm){
+                margin-left: 0;
+            }
+            .formfield-wrap {
+                @include flex;
+                width: 100%;
+                padding-left: 0.6rem;
+                margin-bottom: 0.9rem;
+                @include respond-to(sm){
+                    padding-left: 0;
+                }
+                .link-wrap{
+                    margin-left: auto;
+                    flex: 0 0 23.6%;
+                    max-width: 23.6%;
+                    @include flex;
+                    align-items: center;
+                    @include respond-to(sm){
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+            .formfield{
+                &--form-check{
+                    flex: 0 0 auto;
+                    @include respond-to(sm){
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                    .form-check-input{
+                        margin-left: -2.5rem;
+                        margin-right: 1rem;
+                    }
+                }
+                .formfield-input{
+                    padding-left: 1.2rem;
+                }
+            }
+            .formfields{
+                margin-top: 1.5rem;
+                max-width: 41.3rem;
+                margin-bottom: 3rem;
+                @include respond-to(sm){
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .btn--link-underline{
+                line-height: 1.45rem;
+                margin-top: -0.2rem;
+                @include respond-to(sm){
+                    margin-left: 2.1rem;
+                }
+            }
+            .btn--yellow{
+                margin-top: 1.7rem;
+                margin-left: 0.4rem;
+                width: 15.5rem;
+                margin-bottom: 0;
+                @include respond-to(sm){
+                    margin-top: 1rem;
+                }
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+        
+    }
+    &--book{
+        .modal-content{
+            padding: 3.9rem 5.4rem 3.2rem;
+            @include respond-to(sm){
+                padding: 3.4rem 2.2rem 1.4rem 2rem;
+            }
+        }
+        .btn--yellow{
+            margin-top: 0.3rem;
+            padding: 0.575rem 0.6625rem;
+        }
+        p{
+            @include respond-to(sm){
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+            }
+        }
+        h3{
+            @include respond-to(sm){
+                margin-bottom: 0.9rem;
+            }
+        }
+    }
 }
 // ----- /MODAL ----- //
 // 

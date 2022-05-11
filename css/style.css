@@ -3399,6 +3399,182 @@ h5 {
     padding: 0.575rem 0.6625rem;
   }
 }
+.modal--send-enquiry .modal-content {
+  padding: 4.9375rem 6.1rem 4rem;
+}
+@media (max-width: 991px) {
+  .modal--send-enquiry .modal-content {
+    padding: 2.4rem 1.1rem 2.4rem;
+  }
+}
+@media (max-width: 991px) {
+  .modal--send-enquiry p {
+    font-size: 1.125rem;
+  }
+}
+.modal--send-enquiry form {
+  max-width: 41.4rem;
+  margin-bottom: 1.3rem;
+}
+@media (max-width: 991px) {
+  .modal--send-enquiry form {
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.modal--send-enquiry form .formfield input, .modal--send-enquiry form .formfield textarea {
+  padding-left: 1.2rem;
+}
+@media (max-width: 991px) {
+  .modal--send-enquiry form .formfield input, .modal--send-enquiry form .formfield textarea {
+    padding-left: 0.8rem;
+  }
+}
+.modal--send-enquiry form .formfield input::placeholder, .modal--send-enquiry form .formfield textarea::placeholder {
+  color: #000;
+}
+.modal--send-enquiry form .formfield--textarea {
+  height: 5.3375rem;
+}
+@media (max-width: 991px) {
+  .modal--send-enquiry form .formfield--textarea {
+    height: 6.4375rem;
+  }
+}
+.modal--send-enquiry form .formfield--textarea .formfield-input {
+  padding-top: 0.9rem;
+}
+.modal--send-enquiry form .btn--yellow {
+  margin-top: 1.4rem;
+  width: 15.5rem;
+  margin-bottom: 2.2rem;
+}
+@media (max-width: 991px) {
+  .modal--send-enquiry form .btn--yellow {
+    margin-top: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.modal--follow .modal-content {
+  padding-bottom: 7.2rem;
+}
+@media (max-width: 991px) {
+  .modal--follow .modal-content {
+    padding-bottom: 2.5rem;
+  }
+}
+.modal--follow form {
+  margin-left: -0.4rem;
+  max-width: 43rem;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .modal--follow form {
+    margin-left: 0;
+  }
+}
+.modal--follow form .formfield-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+@media (max-width: 991px) {
+  .modal--follow form .formfield-wrap {
+    padding-left: 0;
+  }
+}
+.modal--follow form .formfield-wrap .link-wrap {
+  margin-left: auto;
+  flex: 0 0 23.6%;
+  max-width: 23.6%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .modal--follow form .formfield-wrap .link-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.modal--follow form .formfield--form-check {
+  flex: 0 0 auto;
+}
+@media (max-width: 991px) {
+  .modal--follow form .formfield--form-check {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.modal--follow form .formfield--form-check .form-check-input {
+  margin-left: -2.5rem;
+  margin-right: 1rem;
+}
+.modal--follow form .formfield .formfield-input {
+  padding-left: 1.2rem;
+}
+.modal--follow form .formfields {
+  margin-top: 1.5rem;
+  max-width: 41.3rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 991px) {
+  .modal--follow form .formfields {
+    margin-bottom: 1.5rem;
+  }
+}
+.modal--follow form .btn--link-underline {
+  line-height: 1.45rem;
+  margin-top: -0.2rem;
+}
+@media (max-width: 991px) {
+  .modal--follow form .btn--link-underline {
+    margin-left: 2.1rem;
+  }
+}
+.modal--follow form .btn--yellow {
+  margin-top: 1.7rem;
+  margin-left: 0.4rem;
+  width: 15.5rem;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .modal--follow form .btn--yellow {
+    margin-top: 1rem;
+  }
+}
+.modal--follow p {
+  margin-bottom: 0;
+}
+.modal--book .modal-content {
+  padding: 3.9rem 5.4rem 3.2rem;
+}
+@media (max-width: 991px) {
+  .modal--book .modal-content {
+    padding: 3.4rem 2.2rem 1.4rem 2rem;
+  }
+}
+.modal--book .btn--yellow {
+  margin-top: 0.3rem;
+  padding: 0.575rem 0.6625rem;
+}
+@media (max-width: 991px) {
+  .modal--book p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 991px) {
+  .modal--book h3 {
+    margin-bottom: 0.9rem;
+  }
+}
 
 .tickets {
   background-color: #F2EDF7;
