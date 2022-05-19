@@ -7233,15 +7233,15 @@ h5 {
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 767px) {
-  .block-social {
-    padding-bottom: 13.5rem;
-  }
-}
 @media (max-width: 991px) {
   .block-social {
     padding-top: 1.3rem;
     padding-bottom: 8rem;
+  }
+}
+@media (max-width: 767px) {
+  .block-social {
+    padding-bottom: 13.5rem;
   }
 }
 .block-social::after {
@@ -7255,19 +7255,19 @@ h5 {
   right: 8%;
   bottom: -2.6rem;
 }
+@media (max-width: 1199px) {
+  .block-social::after {
+    width: 22.6875rem;
+    height: 22.5rem;
+    right: 2%;
+  }
+}
 @media (max-width: 991px) {
   .block-social::after {
     width: 13.4375rem;
     height: 13.3125rem;
     right: 8.6%;
     bottom: -1.7rem;
-  }
-}
-@media (max-width: 1199px) {
-  .block-social::after {
-    width: 22.6875rem;
-    height: 22.5rem;
-    right: 2%;
   }
 }
 .block-social h2 {
@@ -7291,16 +7291,16 @@ h5 {
   flex: 0 0 50%;
   max-width: 50%;
 }
-@media (max-width: 991px) {
-  .block-social .col {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
 @media (max-width: 1199px) {
   .block-social .col {
     flex: 0 0 65%;
     max-width: 65%;
+  }
+}
+@media (max-width: 991px) {
+  .block-social .col {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 .block-social--tint {

@@ -6,12 +6,12 @@
     padding-bottom: 5.2rem;
     position: relative;
     overflow: hidden;
-    @include respond-to(xs){
-        padding-bottom: 13.5rem;
-    }
     @include respond-to(sm){
         padding-top: 1.3rem;
         padding-bottom: 8rem;
+    }
+    @include respond-to(xs){
+        padding-bottom: 13.5rem;
     }
     &::after{
         content: '';
@@ -23,16 +23,16 @@
         position: absolute;
         right: 8%;
         bottom: -2.6rem;
+        @include respond-to(lg){
+            width: 22.6875rem;
+            height: 22.5rem;
+            right: 2%;
+        }
         @include respond-to(sm){
             width: 13.4375rem;
             height: 13.3125rem;
             right: 8.6%;
             bottom: -1.7rem;
-        }
-        @include respond-to(lg){
-            width: 22.6875rem;
-            height: 22.5rem;
-            right: 2%;
         }
     }
     h2{
@@ -53,13 +53,13 @@
     .col{
         flex: 0 0 50%;
         max-width: 50%;
-        @include respond-to(sm){
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
         @include respond-to(lg){
             flex: 0 0 65%;
             max-width: 65%;
+        }
+        @include respond-to(sm){
+            flex: 0 0 100%;
+            max-width: 100%;
         }
     }
     &--tint{
