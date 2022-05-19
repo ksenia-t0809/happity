@@ -4,16 +4,20 @@
     @include respond-to(sm){
         padding-bottom: 0.3rem;
     }
+    .block-banner--sorry{
+        margin-bottom: 3rem;
+        @include respond-to(sm){
+            margin-bottom: 1.05rem;
+        }
+    }
     .block-head{
         background-color: $purple;
         padding-top: 2.4rem;
         padding-bottom: 2rem;
         color: $white;
-        margin-bottom: 2.8rem;
         @include respond-to(sm){
             padding-top: 1.4rem;
             padding-bottom: 1rem;
-            margin-bottom: 1.05rem;
         }
         h5{
             margin-bottom: 0;
@@ -46,30 +50,38 @@
             max-width: 75.7rem;
         }
     }
-    .col{
-        &:first-child{
-            flex: 0 0 32.1%;
-            max-width: 32.1%;
-            @include respond-to(sm){
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-        }
-        &:last-child{
-            flex: 0 0 66%;
-            max-width: 66%;
-            padding-right: 2.6rem;
-            @include respond-to(sm){
-                flex: 0 0 100%;
-                max-width: 100%;
-                padding-right: 1.5rem;
-            }
-        }
-    }
     .block-body{
         .row{
             justify-content: space-between;
             align-items: stretch;
+        }
+        .col{
+            &:first-child{
+                flex: 0 0 32.1%;
+                max-width: 32.1%;
+                @include respond-to(sm){
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+            &:last-child{
+                flex: 0 0 66%;
+                max-width: 66%;
+                padding-right: 2.6rem;
+                @include respond-to(sm){
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    padding-right: 1.5rem;
+                }
+            }
+        }
+        h3{
+            margin-bottom: 0.9rem;
+            @include respond-to(sm){
+                font-size: 1rem;
+                line-height: 1.375rem;
+                margin-left: -0.6rem;
+            }
         }
     }
     .now-booking {
@@ -92,14 +104,6 @@
             left: -43vw;
             right: -30vw;
             z-index: -1;
-        }
-    }
-    h3{
-        margin-bottom: 0.9rem;
-        @include respond-to(sm){
-            font-size: 1rem;
-            line-height: 1.375rem;
-            margin-left: -0.6rem;
         }
     }
     .card{
