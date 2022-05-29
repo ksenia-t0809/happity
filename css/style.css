@@ -339,6 +339,13 @@ h5 {
   background-color: #FDC500;
   border-color: #FDC500;
 }
+.btn--white {
+  background-color: #fff;
+  color: #000;
+}
+.btn--white:hover, .btn--white.hover {
+  background-color: #FFD500;
+}
 .btn--full-width {
   width: 100%;
 }
@@ -4404,6 +4411,76 @@ h5 {
   top: 0;
   bottom: 0;
   right: 0.9375rem;
+}
+
+.cookie-banner {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  z-index: 1000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 2.5rem 3.3rem 1.3rem 4.2rem;
+  transform: translateY(100%);
+  transition: 0.4s;
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  .cookie-banner {
+    padding: 2.2rem 3rem 1.5rem 3.2rem;
+    justify-content: center;
+  }
+}
+.cookie-banner p {
+  font-family: "Filson Soft", sans-serif;
+  flex: 0 0 80%;
+  max-width: 80%;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+}
+@media (max-width: 1199px) {
+  .cookie-banner p {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .cookie-banner p {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .cookie-banner p {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.cookie-banner p a {
+  color: #fff;
+  text-decoration: underline;
+}
+.cookie-banner p a:hover {
+  color: #FFD500;
+}
+.cookie-banner .btn {
+  margin-left: auto;
+  padding: 0.575rem 4.2rem;
+}
+@media (max-width: 767px) {
+  .cookie-banner .btn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+.cookie-banner.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .components-box .components-title {

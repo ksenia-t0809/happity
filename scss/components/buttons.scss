@@ -35,6 +35,13 @@
             border-color: $gold;
         }
     }
+    &--white{
+        background-color: $white;
+        color: $black;
+        &:hover, &.hover{
+            background-color: $yellow;
+        }
+    }
     &--full-width{
         width: 100%;
     }
