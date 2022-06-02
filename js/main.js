@@ -10,6 +10,12 @@ $(document).ready(function(){
         e.preventDefault();
     })
 
+    // Dropdown
+    $('.dropdown-btn').on('click', function(){
+        $(this).siblings('.dropdown-menu').toggleClass('show');
+        $(this).toggleClass('active')
+    })
+
     // Sidebar
     $('.sidebar .item-button').on('click', function(){
         $(this).parent('.sidebar-item').toggleClass('active');
