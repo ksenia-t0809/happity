@@ -3593,6 +3593,64 @@ h5 {
     margin-bottom: 0.9rem;
   }
 }
+.modal--login .modal-content {
+  background-color: #fff;
+  padding: 3.1rem 3.2rem 1.7rem;
+}
+@media (max-width: 767px) {
+  .modal--login .modal-content {
+    padding: 2.2rem 1.6rem 1.7rem;
+  }
+}
+.modal--login .modal-wrapper {
+  max-width: 23.4rem;
+}
+@media (max-width: 767px) {
+  .modal--login .modal-wrapper {
+    max-width: 21.5rem;
+  }
+}
+.modal--login .logo-img {
+  width: 19rem;
+  max-width: 19rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.modal--login form {
+  margin-top: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+.modal--login form .formfield .formfield-input {
+  background-color: #F2EDF7;
+  padding-left: 0.6rem;
+}
+.modal--login form .formfield .formfield-input::placeholder {
+  color: #AEACAC;
+}
+.modal--login form .btn--link-underline {
+  margin-left: 0;
+  color: #64358C;
+  margin-top: 1.2rem;
+}
+.modal--login form .btn--yellow {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.575rem 2rem;
+  margin-left: -0.2rem;
+  margin-bottom: 0;
+}
+.modal--login h5 {
+  font-weight: 500;
+}
+.modal--login p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-left: -0.2rem;
+}
+.modal--login .link {
+  color: #64358C;
+  text-decoration: underline;
+}
 
 .tickets {
   background-color: #F2EDF7;

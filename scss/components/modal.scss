@@ -433,6 +433,66 @@
             }
         }
     }
+    &--login{
+        .modal-content{
+            background-color: $white;
+            padding: 3.1rem 3.2rem 1.7rem;
+            @include respond-to(xs){
+                padding: 2.2rem 1.6rem 1.7rem;
+            }
+        }
+        .modal-wrapper{
+            max-width: 23.4rem;
+            @include respond-to(xs){
+                max-width: 21.5rem; 
+            }
+        }
+        .logo-img{
+            width: 19rem;
+            max-width: 19rem;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+        form{
+            margin-top: 0.5rem;
+            margin-bottom: 1.6rem;
+            .formfield{
+                .formfield-input{
+                    background-color: $mauve_tint;
+                    padding-left: 0.6rem;
+                    &::placeholder{
+                        color: #AEACAC;
+                    }
+                }
+            }
+            .btn{
+                &--link-underline{
+                    margin-left: 0;
+                    color: $purple;
+                    margin-top: 1.2rem;
+                }
+                &--yellow{
+                    display: block;
+                    margin-top: 1rem;
+                    padding: 0.575rem 2rem;
+                    margin-left: -0.2rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        h5{
+            font-weight: 500;
+        }
+        p{
+            font-size: 1rem;
+            line-height: 1.4rem;
+            margin-left: -0.2rem;
+        }
+        .link{
+            color: $purple;
+            text-decoration: underline;   
+        }
+    }
 }
 // ----- /MODAL ----- //
 // 
