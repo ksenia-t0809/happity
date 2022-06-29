@@ -1,0 +1,90 @@
+// ----- USER SIDEBAR ----- //
+.user-sidebar{
+    @include respond-to(sm){
+        position: fixed;
+        inset: 0;
+        background-color: $white;
+        transform: translateX(100%);
+        transition: 0.4s;
+        z-index: 1000;
+        padding: 4.5rem 1rem;
+        opacity: 0;
+    }
+    @include respond-to(sm){
+        &.sidebar-open{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    .btn-close{
+        display: none;
+        @include respond-to(sm){
+            display: block;
+            position: absolute;
+            top: 1.25rem;
+            right: 1rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .sidebar-menu{
+        .sidebar-item{
+            border-bottom: 1px solid rgb(0 0 0 / 50%);
+            font-family: $font-family-heading;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-bottom: 1rem;
+            a{
+                width: 100%;
+                @include flex;
+                align-items: center;
+                color: $dark_grey;
+                padding: 0 0.7rem 0.9rem;
+                &::after{
+                    content: '';
+                    background-image: url("data:image/svg+xml,%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.6839 1.70711C11.0744 1.31658 11.0744 0.683417 10.6839 0.292893C10.2934 -0.0976311 9.66022 -0.0976311 9.2697 0.292893L10.6839 1.70711ZM2.68391 0.292893C2.29339 -0.0976314 1.66022 -0.0976315 1.2697 0.292893C0.879176 0.683417 0.879176 1.31658 1.2697 1.70711L2.68391 0.292893ZM6.20308 4.77373L6.91019 5.48083L6.20308 4.77373ZM5.75053 4.77373L6.45764 4.06662L5.75053 4.77373ZM9.2697 0.292893L5.49597 4.06662L6.91019 5.48083L10.6839 1.70711L9.2697 0.292893ZM6.45764 4.06662L2.68391 0.292893L1.2697 1.70711L5.04343 5.48083L6.45764 4.06662ZM5.49597 4.06662C5.76153 3.80106 6.19208 3.80106 6.45764 4.06662L5.04343 5.48083C5.55892 5.99632 6.39469 5.99633 6.91019 5.48083L5.49597 4.06662Z' fill='%23F72585'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 0.75rem;
+                    height: 0.35rem;
+                    margin-left: auto;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+    
+}
+.user-sidebar-button{
+    display: none;
+    @include respond-to(sm){
+        display: flex;
+        text-transform: uppercase;
+        margin-top: -0.2rem;
+        font-size: 0.938rem;
+        font-weight: 500;
+        font-family: $font-family-heading;
+        color: $dark_grey;
+        margin-left: 0.9rem;
+        margin-bottom: 1.3rem;
+    }
+    .icon{
+        width: 1.25rem;
+        height: 1.25rem;
+        flex: 0 0 1.25rem;
+        margin-right: 0.7rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+// ----- USER SIDEBAR ----- //
+// 

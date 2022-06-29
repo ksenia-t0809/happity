@@ -107,4 +107,15 @@ $(document).ready(function(){
         owl.trigger('destroy.owl.carousel');
         owl.addClass('off');
     }
+
+    // User Sidebar
+    $('.user-sidebar-button').on('click', function(e){
+        $(this).siblings('.user-sidebar').addClass('sidebar-open')
+        e.preventDefault();
+    })
+    $('.user-sidebar .btn-close').on('click', function(e){
+        $(this).parent('.user-sidebar').removeClass('sidebar-open')
+        e.preventDefault();
+    })
+
 })

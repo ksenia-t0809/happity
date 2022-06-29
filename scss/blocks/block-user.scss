@@ -1,0 +1,262 @@
+// ----- BLOCK USER ----- //
+.block-user{
+    padding-top: 3.2rem;
+    padding-bottom: 1.45rem;
+    @include respond-to(sm){
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+    }
+    .container{
+        @media(min-width: 1200px){
+            max-width: 78.4rem;
+        }
+        @include respond-to(sm){
+            padding: 0 1.8rem;
+        }
+    }
+    .col{
+        &--left{
+            flex: 0 0 29.53%;
+            max-width: 29.53%;
+            padding-right: 3.3rem;
+            padding-top: 1.1rem;
+            @include respond-to(xl){
+                padding-right: 1.5rem;
+            }
+            @include respond-to(lg){
+                padding-left: 0;
+            }
+            @include respond-to(sm){
+                padding-left: 1.5rem;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        &--right{
+            padding-right: 2.2rem;
+            @include respond-to(sm){
+                padding-right: 1.5rem;
+            }
+        }
+    }
+    .title{
+        @include respond-to(sm){
+            background-color: $mauve_tint;
+            padding: 1.5rem 1.5rem 0.6rem;
+            margin-bottom: 1.1rem;
+        }
+    }
+    h1{
+        color: $purple;
+        font-size: 1.563rem;
+        font-weight: 500;
+        line-height: 2.188rem;
+        margin-bottom: 0.4rem;
+    }
+    .lead{
+        margin-bottom: 0.9rem;
+        @include respond-to(sm){
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+        }
+        a{
+            font-weight: 700;
+            color: $purple;
+        }
+    }
+    form{
+        .btn{
+            margin-top: -0.1rem;
+            padding: 0.575rem 8.9rem;
+            @include respond-to(sm){
+                margin-top: 0.1rem;
+                padding: 0.575rem 1rem;
+                width: 100%;
+            }
+        }
+    }
+    .tickets{
+        padding: 1.8rem 1.6rem 1.8rem;
+        margin-bottom: 1.4rem;
+        @include respond-to(sm){
+            padding: 1.4rem 1.3rem 1.8rem 1.6rem;
+            margin-bottom: 1.2rem;
+        }
+        h3{
+            margin-bottom: 0.7rem;
+            @include respond-to(sm){
+                font-size: 1.5625rem;
+                line-height: 2.1875rem;
+                margin-bottom: 1.1rem;
+            }
+        }
+        h6{
+            color: $purple;
+            font-family: $font-family-base;
+            font-size: 0.938rem;
+            line-height: 1.125em;
+            margin-left: 0.6rem;
+            margin-bottom: 0.4rem;
+        }
+        h4{
+            color: $purple;
+            text-transform: none;
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-bottom: 0.7rem;
+        }
+        .grey-text{
+            margin-left: 0.5rem;
+            margin-top: 1.2rem;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-family: "Filson Soft", sans-serif;
+            max-width: 42rem;
+            margin-bottom: 1.3rem;
+        }
+        .radio-buttons{
+            margin-bottom: 1.8rem;
+        }
+        .formfield{
+            max-width: 20.4rem;
+            margin-bottom: 1.3rem;
+            &--icon{
+                .icon{
+                    width: 2.3rem;
+                    flex: 0 0 2.3rem;
+                }
+            }
+            &--select{
+                margin-left: 0;
+                margin-top: 0.8rem;
+                padding: 0 0.5rem;
+                background-position-x: 95.7%;
+                position: static;
+            }
+            &--form-check{
+                margin-bottom: 0.72rem;
+                .form-check-input{
+                    background-color: $white;
+                    &:checked{
+                        background-color: $pink;
+                    }
+                }
+            }
+        }
+        .checkboxes{
+            margin-top: 1.2rem;
+            margin-left: 0.75rem;
+        }
+        &--news{
+            padding: 2.2rem 2rem 1.1rem;
+            margin-bottom: 1.7rem;
+            @include respond-to(sm){
+                padding: 1.4rem 2rem 1.1rem;
+                margin-bottom: 1.4rem;
+            }
+            h3{
+                margin-bottom: 1.1rem;
+                @include respond-to(sm){
+                    margin-bottom: 0.8rem;
+                }
+            }
+            h6{
+                margin-left: 0.2rem;
+                margin-bottom: 1.3rem;
+                @include respond-to(sm){
+                    margin-left: -0.1rem;
+                    line-height: 1.25rem;
+                    margin-bottom: 0.6rem;
+                }
+            }
+            .radio-buttons{
+                margin-left: 0.4rem;
+                @include respond-to(sm){
+                    margin-left: -0.2rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &--job{
+            @include respond-to(sm){
+                padding: 2.2rem 1.8rem 1.5rem;
+            }
+            h6{
+                @include respond-to(sm){
+                    margin-left: 0.2rem;
+                    margin-bottom: 1.15rem;
+                }
+            }
+            .radio-buttons{
+                @include respond-to(sm){
+                    margin-left: 0.3rem;
+                }
+            }
+        }
+        &--profile{
+            padding: 0.6rem 1.6rem 1.5rem;
+            @include respond-to(sm){
+                padding: 0.6rem 1.2rem 1.4rem 1.6rem;
+                margin-bottom: 1.4rem;
+            }
+            .formfield{
+                max-width: 34.6rem;
+                margin-bottom: 0.7rem;
+                .formfield-input{
+                    padding: 0 0.6rem;
+                }
+            }
+            form{
+                .btn{
+                    margin-top: 0.7rem;
+                    padding: 0.575rem 7.2rem;
+                }
+            }
+        }
+        &--reset{
+            padding: 1.1rem 1.4rem 2rem;
+            @include respond-to(sm){
+                padding: 1.1rem 1.4rem 1.5rem;
+            }
+            .formfield{
+                max-width: 17.2rem;
+            }
+            form{
+                .btn{
+                    margin-top: 1.2rem;
+                    @include respond-to(sm){
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    &--profile{
+        @include respond-to(sm){
+            padding-bottom: 0.875rem;
+        }
+        h1{
+            margin-bottom: 0.95rem;
+            @include respond-to(sm){
+                margin-top: 0.4rem;
+                margin-left: 1.5rem;
+                margin-bottom: 1.4rem;
+            }
+        }
+        .col{
+            &--right{
+                padding-right: 3.7rem;
+                @include respond-to(sm){
+                    padding-right: 1.5rem;
+                }
+                @include respond-to(lg){
+                    padding-right: 2.2rem;
+                }
+            }
+        }
+    }
+}
+// ----- /BLOCK USER ----- //
+//

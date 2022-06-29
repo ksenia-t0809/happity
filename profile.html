@@ -55,70 +55,63 @@
                 </a>
             </header>
             <main class="main-content">
-                <section class="block-checkout block-checkout--order">
+                <section class="block-user block-user--profile">
                     <div class="container">
-                        <div class="top-content">
-                            <h3 class="text-purple">Thank you for booking tickets with Movers and Shakers. </h3>
-                            <p class="lead">We have sent a confirmation email to sara@happity.co.uk. If you don’t see it, please check your spam folder and add Happity to your sagfe senders list. If you are still unable to find your booking confirmation, please contact xxxx@moversandshakers.com</p>
-                        </div>
-                        <div class="tickets tickets--invite">
-                            <h3>Invite a friend</h3>
-                            <p class="lead">Want to bring a friend? Share this class via Whatsapp or email.</p>
-                            <div class="social">
-                                <a href="#">
-                                    <img src="img/icon-whats-app.svg" alt="icon-whats-app">
-                                </a>
-                                <a href="#">
-                                    <img src="img/icon-mail.svg" alt="icon-mail">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tickets tickets--text tickets--order">
-                            <h3>Order #275666</h3>
-                            <div class="card card--expanded">
-                                <div class="card-head">
-                                    <div class="card-title">
-                                        <div>
-                                            <h3 class="text-purple">MOVERS AND SHAKERS MIXED CLASS</h3>
-                                            <ul class="card-info">
-                                                <li>
-                                                    <img src="img/icon-circle.svg" alt="icon-circle">
-                                                    0 months - 4 years
-                                                </li>
-                                                <li>
-                                                    <img src="img/icon-calendar.svg" alt="icon-calendar">
-                                                    Tuesday, 21st april
-                                                </li>
-                                                <li>
-                                                    <img src="img/icon-time-clock.svg" alt="icon-time-clock">
-                                                    10.30-11.30
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <img src="img/card-img-1.png" alt="card-img-1">
+                        <div class="row">
+                            <div class="col col--left">
+                                <a href="#" class="user-sidebar-button">
+                                    <div class="icon">
+                                        <img src="img/icon-filter-pink.svg" alt="icon-filter-pink">
                                     </div>
-                                    <p class="lead">This booking includes the following dates: <br>
-                                        21st April</p>
+                                    Settings
+                                </a>
+                                <div class="user-sidebar">
+                                    <a href="#" class="btn-close">
+                                        <img src="img/icon-pink-cross.svg" alt="icon-pink-cross">
+                                    </a>
+                                    <ul class="sidebar-menu">
+                                        <li class="sidebar-item">
+                                            <a href="profile.html">Profile</a>
+                                        </li>
+                                        <li class="sidebar-item">
+                                            <a href="email-preferences.html">Email preferences</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <h3>Purchase details</h3>
-                            <h5>1 X Single Session @ £7.00</h5>
-                            <p>Admits 1 Parent, 1 Child (Siblings under 6 months are free and do not require a ticket.) Refunds only given if we are notified by 8.30am on the day of the class. </p>
-                            <p><b>Total</b> £7.00</p>
-                        </div>
-                        <a href="#" class="btn btn--yellow">book another session</a>
-                        <div class="tickets tickets--create-account">
-                            <h3>CREATE ACCOUNT</h3>
-                            <h5>Next time you book, save time. Add a password below to create an account with Happity.</h5>
-                            <form action="#">
-                                <div class="formfield">
-                                    <input type="password" class="formfield-input" placeholder="Password">
+                            <div class="col col--right">
+                                <h1>Profile</h1>
+                                <div class="tickets tickets--profile">
+                                    <h4>Your details</h4>
+                                    <form action="#">
+                                        <div class="formfield">
+                                            <input type="text" class="formfield-input" name="first-name-input" id="first-name-input" placeholder="First name*">
+                                        </div>
+                                        <div class="formfield">
+                                            <input type="text" class="formfield-input" name="last-name-input" id="last-name-input" placeholder="Last name*">
+                                        </div>
+                                        <div class="formfield">
+                                            <input type="email" class="formfield-input" name="email-input" id="email-input" placeholder="Email*">
+                                        </div>
+                                        <button type="submit" class="btn btn--yellow">Save</button>
+                                    </form>
                                 </div>
-                                <div class="formfield">
-                                    <input type="password" class="formfield-input" placeholder="Password Confirmation">
+                                <div class="tickets tickets--profile tickets--reset">
+                                    <h4>Reset Password</h4>
+                                    <form action="#">
+                                        <div class="formfield">
+                                            <input type="password" class="formfield-input" name="password-input" id="password-input" placeholder="Password*">
+                                        </div>
+                                        <p class="grey-text">
+                                            Your password must be at least 6 characters long and contain as least one uppercase letter, one lowercase letter, one number and one special character.
+                                        </p>
+                                        <div class="formfield">
+                                            <input type="password" class="formfield-input" name="confirm-password-input" id="confirm-password-input" placeholder="Confirm password*">
+                                        </div>
+                                        <button type="submit" class="btn btn--yellow">Save</button>
+                                    </form>
                                 </div>
-                                <button type="submit" class="btn btn--yellow">create account</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </section>
