@@ -3644,6 +3644,94 @@ h5 {
     margin-bottom: 0.9rem;
   }
 }
+.modal--refer .btn-close {
+  right: 1.9rem;
+  top: 1.7rem;
+}
+@media (max-width: 991px) {
+  .modal--refer .btn-close {
+    right: 0.8rem;
+    top: 1.6rem;
+  }
+}
+.modal--refer h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  margin-bottom: 1.3rem;
+}
+@media (max-width: 991px) {
+  .modal--refer h6 {
+    margin-bottom: 1.4rem;
+  }
+}
+.modal--refer .modal-content {
+  padding: 4.3rem 6.1rem;
+}
+@media (max-width: 991px) {
+  .modal--refer .modal-content {
+    padding: 3rem 2.15rem 3.4rem 2.45rem;
+  }
+}
+.modal--refer h3 {
+  margin-bottom: 1.1rem;
+}
+@media (max-width: 991px) {
+  .modal--refer h3 {
+    font-size: 1.5625rem;
+    line-height: 2.1875rem;
+  }
+}
+.modal--refer p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+}
+.modal--refer p a {
+  color: #64358C;
+  text-decoration: underline;
+}
+.modal--refer form {
+  margin-left: 0rem;
+  max-width: 41.4rem;
+  margin-bottom: 2rem;
+  margin-top: 1.7rem;
+}
+@media (max-width: 991px) {
+  .modal--refer form {
+    margin-top: 2.1rem;
+    margin-bottom: 1.8rem;
+  }
+}
+.modal--refer form .formfield {
+  margin-bottom: 1.7rem;
+}
+@media (max-width: 991px) {
+  .modal--refer form .formfield .formfield-input {
+    padding-left: 0.8rem;
+  }
+}
+.modal--refer form .formfield .formfield-input::placeholder {
+  color: #AEACAC;
+}
+.modal--refer form p {
+  margin-right: -3rem;
+}
+@media (max-width: 991px) {
+  .modal--refer form p {
+    margin-right: 0rem;
+  }
+}
+.modal--refer form .btn--yellow {
+  margin-top: 2rem;
+  margin-left: 0rem;
+}
+@media (max-width: 991px) {
+  .modal--refer form .btn--yellow {
+    margin-top: 2.4rem;
+    margin-left: 0.6rem;
+  }
+}
 
 .tickets {
   background-color: #F2EDF7;
