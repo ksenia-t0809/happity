@@ -8088,4 +8088,119 @@ h5 {
   }
 }
 
+.block-create-account {
+  padding-top: 3.5rem;
+  padding-bottom: 6.8rem;
+}
+@media (max-width: 991px) {
+  .block-create-account {
+    padding-top: 2.7rem;
+    padding-bottom: 4.6rem;
+  }
+}
+.block-create-account h1 {
+  color: #64358C;
+  font-size: 1.5625rem;
+  line-height: 2.1875rem;
+  font-weight: 500;
+  margin-bottom: 1.9rem;
+}
+@media (max-width: 991px) {
+  .block-create-account h1 {
+    margin-bottom: 1.3rem;
+  }
+}
+.block-create-account .tickets {
+  margin-left: -0.5rem;
+  margin-right: 0.2rem;
+  padding: 1.6rem 3.4rem 2.1rem;
+}
+@media (max-width: 991px) {
+  .block-create-account .tickets {
+    margin: 0;
+    padding: 1.2rem 1rem 1.9rem 1.5rem;
+  }
+}
+.block-create-account .tickets .formfield {
+  max-width: 34.5rem;
+  margin-bottom: 0.7rem;
+}
+.block-create-account .tickets .formfield .formfield-input {
+  padding: 0 0.5rem;
+}
+.block-create-account .tickets .formfield--password {
+  max-width: 17.3rem;
+  margin-bottom: 1.2rem;
+}
+.block-create-account .tickets .formfield--form-check {
+  margin-left: 0.2rem;
+  margin-top: 1.6rem;
+  line-height: 1.8rem;
+  margin-bottom: 0.15rem;
+}
+@media (max-width: 991px) {
+  .block-create-account .tickets .formfield--form-check {
+    line-height: 1.5rem;
+  }
+}
+.block-create-account .tickets .formfield--form-check .form-check-input {
+  background-color: #fff;
+  border-color: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 1.25rem;
+  margin-right: 1.2rem;
+}
+.block-create-account .tickets .formfield--form-check .form-check-input:checked {
+  background-color: #64358C;
+  border-color: #64358C;
+}
+@media (max-width: 991px) {
+  .block-create-account .tickets .formfield--form-check .form-check-label {
+    margin-top: 0.15rem;
+  }
+}
+.block-create-account .tickets h5 {
+  color: #64358C;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.block-create-account .tickets form h5 {
+  margin-top: 1.65rem;
+}
+@media (max-width: 991px) {
+  .block-create-account .tickets form h5 {
+    margin-top: 1.45rem;
+    margin-bottom: 1rem;
+  }
+}
+.block-create-account .tickets form .btn {
+  width: 17.1rem;
+}
+@media (max-width: 991px) {
+  .block-create-account .tickets form .btn {
+    margin-top: 1.6rem;
+    width: 17.4rem;
+  }
+}
+.block-create-account .tickets .grey-text {
+  font-weight: 500;
+  color: #979797;
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  max-width: 43rem;
+  margin-bottom: 1.3rem;
+}
+@media (max-width: 991px) {
+  .block-create-account .tickets .grey-text {
+    margin-bottom: 1.2rem;
+  }
+}
+@media (max-width: 991px) {
+  .block-create-account .container {
+    padding: 0 1.8rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
